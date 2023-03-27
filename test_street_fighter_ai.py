@@ -11,7 +11,7 @@ retro.data.Integrations.add_custom_path(rom_directory)
 
 env = retro.RetroEnv(
     game='StreetFighterIISpecialChampionEdition-Genesis', 
-    state='Champion.Level1.ChunLiVsGuile'
+    state='Champion.Level3.ChunLiVsChunLi'
 )
 # Champion.Level2.ChunLiVsKen
 # Champion.Level3.ChunLiVsChunLi

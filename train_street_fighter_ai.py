@@ -76,12 +76,6 @@ def main():
         seed=None,
     )
 
-
-    checkpoint_path = None
-    if checkpoint_path is not None:
-        model = model.load(checkpoint_path, env)
-
-
     # Set the save directory
     save_dir = "trained_models"
     os.makedirs(save_dir, exist_ok=True)
@@ -101,3 +95,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
