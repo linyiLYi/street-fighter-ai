@@ -45,12 +45,12 @@ model = PPO(
     policy_kwargs=policy_kwargs, 
     verbose=1
 )
-model.load("ppo_sf2_cnn")
+model.load("ppo_sf2_cnn_new")
 
 obs = env.reset()
 done = False
 
-while not done:
+while True:
     timestamp = time.time()
     action, _ = model.predict(obs)
     obs, rewards, done, info = env.step(action)
@@ -59,4 +59,4 @@ while not done:
     if render_time < 0.0111:
         time.sleep(0.0111 - render_time)  # Add a delay for 90 FPS
 
-env.close()
+# env.close()

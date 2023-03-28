@@ -45,11 +45,23 @@ def main():
         env,
         device="cuda", 
         policy_kwargs=policy_kwargs, 
-        verbose=1
+        verbose=1,
+        n_steps=2048,
+        batch_size=64,
+        n_epochs=10,
+        learning_rate=0.0003,
+        ent_coef=0.01,
+        clip_range=0.2,
+        clip_range_vf=None,
+        gamma=0.99,
+        gae_lambda=0.95,
+        max_grad_norm=0.5,
+        use_sde=False,
+        sde_sample_freq=-1
     )
-    model.learn(total_timesteps=int(1000))
+    model.learn(total_timesteps=int(500000))
 
-    model.save("ppo_sf2_cnn")
+    model.save("ppo_sf2_cnn_new")
 
 if __name__ == "__main__":
     main()

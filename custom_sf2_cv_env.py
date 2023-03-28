@@ -9,7 +9,6 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         self.win_template = win_template
         self.lose_template = lose_template
         self.threshold = threshold
-
         self.game_screen_gray = None
 
         self.prev_player_health = 1.0
@@ -17,7 +16,7 @@ class StreetFighterCustomWrapper(gym.Wrapper):
 
         # Update observation space to single-channel grayscale image
         self.observation_space = gym.spaces.Box(
-            low=0, high=255, shape=(84, 84, 1), dtype=np.uint8
+            low=0.0, high=1.0, shape=(84, 84, 1), dtype=np.float32
         )
     
     def _preprocess_observation(self, observation):
@@ -26,7 +25,7 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         # print("self.game_screen_gray size: ", self.game_screen_gray.shape)
         # Print the size of the observation
         # print("Observation size: ", observation.shape)
-        resized_image = cv2.resize(self.game_screen_gray, (84, 84), interpolation=cv2.INTER_AREA)
+        resized_image = cv2.resize(self.game_screen_gray, (84, 84), interpolation=cv2.INTER_AREA) / 255.0
         return np.expand_dims(resized_image, axis=-1)
     
     def _check_game_over(self):
@@ -46,11 +45,26 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         player_health = np.sum(player_health_area > 129) / player_health_area.size
         opponent_health = np.sum(oppoent_health_area > 129) / oppoent_health_area.size
 
-        reward = player_health - opponent_health
+        player_health_diff = self.prev_player_health - player_health
+        opponent_health_diff = self.prev_opponent_health - opponent_health
+
+        reward = (opponent_health_diff - player_health_diff) * 100
+
+        # Add bonus for successful attacks or penalize for taking damage
+        if opponent_health_diff > player_health_diff:
+            reward += 10  # Bonus for successful attacks
+        elif opponent_health_diff < player_health_diff:
+            reward -= 10  # Penalty for taking damage
+
+        self.prev_player_health = player_health
+        self.prev_opponent_health = opponent_health
+
         return reward
 
     def reset(self):
         observation = self.env.reset()
+        self.prev_player_health = 1.0
+        self.prev_opponent_health = 1.0
         return self._preprocess_observation(observation)
 
     def step(self, action):
