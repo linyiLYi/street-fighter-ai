@@ -13,11 +13,11 @@ from custom_sf2_cv_env import StreetFighterCustomWrapper
     
 def make_env(game, state, seed=0):
     def _init():
-        win_template = cv2.imread('images/pattern_wins_gray.png', cv2.IMREAD_GRAYSCALE)
+        win_template = cv2.imread('images/pattern_win_gray.png', cv2.IMREAD_GRAYSCALE)
         lose_template = cv2.imread('images/pattern_lose_gray.png', cv2.IMREAD_GRAYSCALE)
         env = retro.RetroEnv(game=game, state=state, obs_type=retro.Observations.IMAGE)
-        env = StreetFighterCustomWrapper(env, win_template, lose_template)
-        env.seed(seed)
+        env = StreetFighterCustomWrapper(env, win_template, lose_template, testing=True)
+        # env.seed(seed)
         return env
     return _init
 
@@ -27,6 +27,14 @@ state_stages = [
     "Champion.Level2.ChunLiVsKen",
     "Champion.Level3.ChunLiVsChunLi",
     "Champion.Level4.ChunLiVsZangief",
+    "Champion.Level5.ChunLiVsDhalsim",
+    "Champion.Level6.ChunLiVsRyu",
+    "Champion.Level7.ChunLiVsEHonda",
+    "Champion.Level8.ChunLiVsBlanka",
+    "Champion.Level9.ChunLiVsBalrog",
+    "Champion.Level10.ChunLiVsVega",
+    "Champion.Level11.ChunLiVsSagat",
+    "Champion.Level12.ChunLiVsBison"
     # Add other stages as necessary
 ]
 
@@ -45,7 +53,7 @@ model = PPO(
     policy_kwargs=policy_kwargs, 
     verbose=1
 )
-model.load("ppo_sf2_cnn_new")
+model.load(r"trained_models_cv_test/ppo_sf2_chunli_final")
 
 obs = env.reset()
 done = False

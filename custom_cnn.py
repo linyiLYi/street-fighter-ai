@@ -2,6 +2,7 @@ import gym
 import torch
 import torch.nn as nn
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
+from torchvision.models import mobilenet_v3_small
 
 # Custom feature extractor (CNN)
 class CustomCNN(BaseFeaturesExtractor):
@@ -21,3 +22,4 @@ class CustomCNN(BaseFeaturesExtractor):
 
     def forward(self, observations: torch.Tensor) -> torch.Tensor:
         return self.cnn(observations.permute(0, 3, 1, 2))  # Swap the channel dimension
+    
