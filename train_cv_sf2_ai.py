@@ -42,11 +42,11 @@ def main():
     # Set up the environment and model
     game = "StreetFighterIISpecialChampionEdition-Genesis"
     state_stages = [
-        # "Champion.Level1.ChunLiVsGuile",
-        # "Champion.Level2.ChunLiVsKen",
-        # "Champion.Level3.ChunLiVsChunLi",
-        # "Champion.Level4.ChunLiVsZangief",
-        # "Champion.Level5.ChunLiVsDhalsim",
+        "Champion.Level1.ChunLiVsGuile",
+        "Champion.Level2.ChunLiVsKen",
+        "Champion.Level3.ChunLiVsChunLi",
+        "Champion.Level4.ChunLiVsZangief",
+        "Champion.Level5.ChunLiVsDhalsim",
         "Champion.Level6.ChunLiVsRyu",
         "Champion.Level7.ChunLiVsEHonda",
         "Champion.Level8.ChunLiVsBlanka",
