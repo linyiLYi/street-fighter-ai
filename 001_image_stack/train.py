@@ -11,11 +11,10 @@ from stable_baselines3.common.preprocessing import is_image_space, is_image_spac
 from stable_baselines3.common.callbacks import BaseCallback, CheckpointCallback
 
 from custom_cnn import CustomCNN
-from mobilenet_extractor import MobileNetV3Extractor
-from custom_sf2_cv_env import StreetFighterCustomWrapper
+from street_fighter_custom_wrapper import StreetFighterCustomWrapper
 
 class RandomOpponentChangeCallback(BaseCallback):
-    def __init__(self, stages, opponent_interval, save_dir, verbose=0):
+    def __init__(self, stages, opponent_interval, verbose=0):
         super(RandomOpponentChangeCallback, self).__init__(verbose)
         self.stages = stages
         self.opponent_interval = opponent_interval
@@ -29,16 +28,14 @@ class RandomOpponentChangeCallback(BaseCallback):
     
 def make_env(game, state, seed=0):
     def _init():
-        win_template = cv2.imread('images/pattern_win_gray.png', cv2.IMREAD_GRAYSCALE)
-        lose_template = cv2.imread('images/pattern_lose_gray.png', cv2.IMREAD_GRAYSCALE)
         env = retro.RetroEnv(
             game=game, 
             state=state, 
             use_restricted_actions=retro.Actions.FILTERED, 
             obs_type=retro.Observations.IMAGE    
         )
-        env = StreetFighterCustomWrapper(env, win_template, lose_template)
-        # env.seed(seed)
+        env = StreetFighterCustomWrapper(env)
+        env.seed(seed)
         return env
     return _init
 
@@ -68,13 +65,8 @@ def main():
     env = SubprocVecEnv([make_env(game, state_stages[0], seed=i) for i in range(num_envs)])
 
     # Using CustomCNN as the feature extractor
-    # policy_kwargs = {
-    #     'features_extractor_class': CustomCNN
-    # }
-
-    # Using MobileNetV3 as the feature extractor
     policy_kwargs = {
-        'features_extractor_class': MobileNetV3Extractor
+        'features_extractor_class': CustomCNN
     }
 
     model = PPO(
@@ -98,8 +90,19 @@ def main():
     )
 
     # Set the save directory
-    save_dir = "trained_models_cv_customcnn_time_penalty"
+    save_dir = "trained_models_continued"
     os.makedirs(save_dir, exist_ok=True)
+
+     # Load the model from file
+    # Change the path to the actual path of the model file
+    model_path = "trained_models/ppo_chunli_1296000_steps.zip"
+    
+    # Load model and modify the learning rate and entropy coefficient
+    custom_objects = {
+        "learning_rate": 0.00005,
+        "ent_coef": 0.2
+    }
+    model = PPO.load(model_path, env=env, device="cuda", custom_objects=custom_objects)
 
     # Set up callbacks
     opponent_interval = 5400 # stage_interval * num_envs = total_steps_per_stage

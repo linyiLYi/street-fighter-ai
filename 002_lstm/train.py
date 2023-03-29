@@ -6,16 +6,15 @@ import cv2
 import retro
 import numpy as np
 from stable_baselines3 import PPO
+from stable_baselines3.common.policies import ActorCriticPolicy
 from stable_baselines3.common.vec_env import SubprocVecEnv
-from stable_baselines3.common.preprocessing import is_image_space, is_image_space_channels_first
 from stable_baselines3.common.callbacks import BaseCallback, CheckpointCallback
 
-from custom_cnn import CustomCNN
-from mobilenet_extractor import MobileNetV3Extractor
-from custom_sf2_cv_env import StreetFighterCustomWrapper
+from cnn_lstm import CNNLSTM, CNNEncoder
+from street_fighter_custom_wrapper import StreetFighterCustomWrapper
 
 class RandomOpponentChangeCallback(BaseCallback):
-    def __init__(self, stages, opponent_interval, save_dir, verbose=0):
+    def __init__(self, stages, opponent_interval, verbose=0):
         super(RandomOpponentChangeCallback, self).__init__(verbose)
         self.stages = stages
         self.opponent_interval = opponent_interval
@@ -26,19 +25,17 @@ class RandomOpponentChangeCallback(BaseCallback):
             print("\nCurrent state:", new_state)
             self.training_env.env_method("load_state", new_state, indices=None)
         return True
-    
+
 def make_env(game, state, seed=0):
     def _init():
-        win_template = cv2.imread('images/pattern_win_gray.png', cv2.IMREAD_GRAYSCALE)
-        lose_template = cv2.imread('images/pattern_lose_gray.png', cv2.IMREAD_GRAYSCALE)
         env = retro.RetroEnv(
             game=game, 
             state=state, 
             use_restricted_actions=retro.Actions.FILTERED, 
             obs_type=retro.Observations.IMAGE    
         )
-        env = StreetFighterCustomWrapper(env, win_template, lose_template)
-        # env.seed(seed)
+        env = StreetFighterCustomWrapper(env)
+        env.seed(seed)
         return env
     return _init
 
@@ -67,21 +64,16 @@ def main():
     # env = SubprocVecEnv([make_env(game, state_stages[0], seed=i) for i in range(num_envs)])
     env = SubprocVecEnv([make_env(game, state_stages[0], seed=i) for i in range(num_envs)])
 
-    # Using CustomCNN as the feature extractor
-    # policy_kwargs = {
-    #     'features_extractor_class': CustomCNN
-    # }
+    class CustomPolicy(ActorCriticPolicy):
+        def __init__(self, *args, **kwargs):
+            super(CustomPolicy, self).__init__(*args, **kwargs)
 
-    # Using MobileNetV3 as the feature extractor
-    policy_kwargs = {
-        'features_extractor_class': MobileNetV3Extractor
-    }
+            self.features_extractor = CNNLSTM()
 
     model = PPO(
-        "CnnPolicy", 
+        CustomPolicy, 
         env,
-        device="cuda", 
-        policy_kwargs=policy_kwargs, 
+        device="cuda",  
         verbose=1,
         n_steps=5400,
         batch_size=64,
@@ -98,7 +90,7 @@ def main():
     )
 
     # Set the save directory
-    save_dir = "trained_models_cv_customcnn_time_penalty"
+    save_dir = "trained_models"
     os.makedirs(save_dir, exist_ok=True)
 
     # Set up callbacks

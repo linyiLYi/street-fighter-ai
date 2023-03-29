@@ -1,57 +1,43 @@
+import collections
+
 import gym
 import cv2
 import numpy as np
-import torch
 from torchvision.transforms import Normalize
 from gym.spaces import MultiBinary
 
 # Custom environment wrapper
 class StreetFighterCustomWrapper(gym.Wrapper):
-    def __init__(self, env, win_template, lose_template, testing=False, threshold=0.65):
+    def __init__(self, env, testing=False, threshold=0.65):
         super(StreetFighterCustomWrapper, self).__init__(env)
+        
         self.action_space = MultiBinary(12)
         
-        # self.win_template = win_template
-        # self.lose_template = lose_template
+        # Use a deque to store the last 16 frames (0.267 seconds)
+        self.frame_stack = collections.deque(maxlen=16)
+
         self.threshold = threshold
         self.game_screen_gray = None
 
         self.prev_player_health = 1.0
         self.prev_opponent_health = 1.0
 
-        # Update observation space to single-channel grayscale image
-        # self.observation_space = gym.spaces.Box(
-        #     low=0.0, high=1.0, shape=(84, 84, 1), dtype=np.float32
-        # )
-
-        # observation_space for mobilenet
+        # Update observation space to include 16 stacked grayscale images
         self.observation_space = gym.spaces.Box(
-            low=0.0, high=1.0, shape=(3, 96, 96), dtype=np.float32
+            low=0.0, high=1.0, shape=(16, 84, 84), dtype=np.float32
         )
 
         self.testing = testing
 
-        # Normalize the image for MobileNetV3Small.
-        self.normalize = Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    
     def _preprocess_observation(self, observation):
-        # self.game_screen_gray = cv2.cvtColor(observation, cv2.COLOR_BGR2GRAY)
-        # resized_image = cv2.resize(self.game_screen_gray, (84, 84), interpolation=cv2.INTER_AREA) / 255.0
-        # return np.expand_dims(resized_image, axis=-1)
-        
-        # # Using MobileNetV3Small.
         self.game_screen_gray = cv2.cvtColor(observation, cv2.COLOR_BGR2GRAY)
-        resized_image = cv2.resize(observation, (96, 96), interpolation=cv2.INTER_AREA).astype(np.float32) / 255.0
-        
-        # Convert the NumPy array to a PyTorch tensor
-        resized_image = torch.from_numpy(resized_image).permute(2, 0, 1)
+        resized_image = cv2.resize(self.game_screen_gray, (84, 84), interpolation=cv2.INTER_AREA) / 255.0
+        # Add the resized image to the frame stack
+        self.frame_stack.append(resized_image)
 
-        # Apply normalization
-        resized_image = self.normalize(resized_image)
-
-        # # Add a batch dimension to match the model input shape
-        # # resized_image = resized_image.unsqueeze(0)
-        return resized_image
+        # Stack the last 16 frames and return the stacked frames
+        stacked_frames = np.stack(self.frame_stack, axis=0)[np.newaxis, ...] # Shape: (1, 16, 84, 84)
+        return stacked_frames
 
     def _get_win_or_lose_bonus(self):
         if self.prev_player_health > self.prev_opponent_health:
@@ -89,6 +75,12 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         observation = self.env.reset()
         self.prev_player_health = 1.0
         self.prev_opponent_health = 1.0
+        
+        # Clear the frame stack and add the first observation 16 times
+        self.frame_stack.clear()
+        for _ in range(16):
+            self.frame_stack.append(self._preprocess_observation(observation)[0])
+
         return self._preprocess_observation(observation)
 
     def step(self, action):
