@@ -1,15 +1,12 @@
 import os
 import random
 
-import gym
-import cv2
 import retro
-import numpy as np
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import SubprocVecEnv
-from stable_baselines3.common.preprocessing import is_image_space, is_image_space_channels_first
 from stable_baselines3.common.callbacks import BaseCallback, CheckpointCallback
 
+from rmsprop_optim import RMSpropTF
 from custom_cnn import CustomCNN
 from street_fighter_custom_wrapper import StreetFighterCustomWrapper
 
@@ -28,7 +25,7 @@ class RandomOpponentChangeCallback(BaseCallback):
     
 def make_env(game, state, seed=0):
     def _init():
-        env = retro.RetroEnv(
+        env = retro.make(
             game=game, 
             state=state, 
             use_restricted_actions=retro.Actions.FILTERED, 
@@ -61,7 +58,6 @@ def main():
 
     num_envs = 8
 
-    # env = SubprocVecEnv([make_env(game, state_stages[0], seed=i) for i in range(num_envs)])
     env = SubprocVecEnv([make_env(game, state_stages[0], seed=i) for i in range(num_envs)])
 
     # Using CustomCNN as the feature extractor
@@ -77,32 +73,26 @@ def main():
         verbose=1,
         n_steps=5400,
         batch_size=64,
-        n_epochs=10,
-        learning_rate=0.0003,
+        learning_rate=0.0001,
         ent_coef=0.01,
         clip_range=0.2,
-        clip_range_vf=None,
         gamma=0.99,
         gae_lambda=0.95,
-        max_grad_norm=0.5,
-        use_sde=False,
-        sde_sample_freq=-1
+        tensorboard_log="logs/"
     )
 
     # Set the save directory
-    save_dir = "trained_models_continued"
+    save_dir = "trained_models"
     os.makedirs(save_dir, exist_ok=True)
 
-     # Load the model from file
-    # Change the path to the actual path of the model file
-    model_path = "trained_models/ppo_chunli_1296000_steps.zip"
+    # Load the model from file
+    # model_path = "trained_models/ppo_chunli_1296000_steps.zip"
     
     # Load model and modify the learning rate and entropy coefficient
-    custom_objects = {
-        "learning_rate": 0.00005,
-        "ent_coef": 0.2
-    }
-    model = PPO.load(model_path, env=env, device="cuda", custom_objects=custom_objects)
+    # custom_objects = {
+    #     "learning_rate": 0.0002
+    # }
+    # model = PPO.load(model_path, env=env, device="cuda")#, custom_objects=custom_objects)
 
     # Set up callbacks
     opponent_interval = 5400 # stage_interval * num_envs = total_steps_per_stage
@@ -110,11 +100,23 @@ def main():
     checkpoint_callback = CheckpointCallback(save_freq=checkpoint_interval, save_path=save_dir, name_prefix="ppo_chunli")
     stage_increase_callback = RandomOpponentChangeCallback(state_stages, opponent_interval, save_dir)
 
-    
+    # model_params = {
+    #     'n_steps': 5, 
+    #     'gamma': 0.99, 
+    #     'gae_lambda':1, 
+    #     'learning_rate': 7e-4, 
+    #     'vf_coef': 0.5,
+    #     'ent_coef': 0.0,
+    #     'max_grad_norm':0.5,
+    #     'rms_prop_eps':1e-05 
+    # }
+    # model = A2C('CnnPolicy', env, tensorboard_log='logs/', verbose=1, **model_params, policy_kwargs=dict(optimizer_class=RMSpropTF))
+
     model.learn(
         total_timesteps=int(6048000), # total_timesteps = stage_interval * num_envs * num_stages (1120 rounds)
         callback=[checkpoint_callback, stage_increase_callback]
     )
+    env.close()
 
     # Save the final model
     model.save(os.path.join(save_dir, "ppo_sf2_chunli_final.zip"))

@@ -12,8 +12,6 @@ class StreetFighterCustomWrapper(gym.Wrapper):
     def __init__(self, env, testing=False, threshold=0.65):
         super(StreetFighterCustomWrapper, self).__init__(env)
         
-        self.action_space = MultiBinary(12)
-        
         # Use a deque to store the last 4 frames
         self.frame_stack = collections.deque(maxlen=4)
 
@@ -89,7 +87,7 @@ class StreetFighterCustomWrapper(gym.Wrapper):
 
     def step(self, action):
         # observation, _, _, info = self.env.step(action)
-        observation, _reward, _done, info = self.env.step(self.env.action_space.sample())
+        observation, _reward, _done, info = self.env.step(action)
         custom_reward = self._get_reward()
         custom_reward -= 1.0 / 60.0 # penalty for each step (-1 points per second)
 

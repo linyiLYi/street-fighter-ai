@@ -1,13 +1,12 @@
-import time 
-
-import cv2
 import retro
+
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common.evaluation import evaluate_policy
 
-from custom_cnn import CustomCNN
 from street_fighter_custom_wrapper import StreetFighterCustomWrapper
-    
+
 def make_env(game, state):
     def _init():
         env = retro.RetroEnv(
@@ -16,7 +15,7 @@ def make_env(game, state):
             use_restricted_actions=retro.Actions.FILTERED, 
             obs_type=retro.Observations.IMAGE    
         )
-        env = StreetFighterCustomWrapper(env, testing=True)
+        env = StreetFighterCustomWrapper(env)
         return env
     return _init
 
@@ -40,31 +39,9 @@ state_stages = [
 env = make_env(game, state_stages[0])()
 
 # Wrap the environment
+env = Monitor(env, 'logs/')
 env = DummyVecEnv([lambda: env])
 
-policy_kwargs = {
-    'features_extractor_class': CustomCNN
-}
-
-model = PPO(
-    "CnnPolicy", 
-    env,
-    device="cuda", 
-    policy_kwargs=policy_kwargs, 
-    verbose=1
-)
-model.load(r"trained_models_continued/ppo_chunli_432000_steps")
-
-obs = env.reset()
-done = False
-
-while True:
-    timestamp = time.time()
-    action, _ = model.predict(obs)
-    obs, rewards, done, info = env.step(action)
-    env.render()
-    render_time = time.time() - timestamp
-    if render_time < 0.0111:
-        time.sleep(0.0111 - render_time)  # Add a delay for 90 FPS
-
-# env.close()
+model = PPO.load('trained_models/ppo_chunli_1296000_steps')
+mean_reward, std_reward = evaluate_policy(model, env, render=True, n_eval_episodes=10)
+print(f"Mean reward: {mean_reward:.2f} +/- {std_reward:.2f}")

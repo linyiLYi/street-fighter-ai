@@ -1,0 +1,2791 @@
+(StreetFighterAI) PS C:\Users\unitec\Documents\AIProjects\street-fighter-ai\001_image_stack> python .\train.py
+Using cuda device
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+------------------------------
+| time/              |       |
+|    fps             | 1534  |
+|    iterations      | 1     |
+|    time_elapsed    | 28    |
+|    total_timesteps | 43200 |
+------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 696         |
+|    iterations           | 2           |
+|    time_elapsed         | 123         |
+|    total_timesteps      | 86400       |
+| train/                  |             |
+|    approx_kl            | 0.019640451 |
+|    clip_fraction        | 0.222       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.731       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.529       |
+|    n_updates            | 300         |
+|    policy_gradient_loss | 0.0037      |
+|    value_loss           | 17.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+----------------------------------------
+| time/                   |            |
+|    fps                  | 587        |
+|    iterations           | 3          |
+|    time_elapsed         | 220        |
+|    total_timesteps      | 129600     |
+| train/                  |            |
+|    approx_kl            | 0.01716586 |
+|    clip_fraction        | 0.184      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.15      |
+|    explained_variance   | 0.681      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.305      |
+|    n_updates            | 310        |
+|    policy_gradient_loss | -0.00363   |
+|    value_loss           | 12.6       |
+----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 545         |
+|    iterations           | 4           |
+|    time_elapsed         | 316         |
+|    total_timesteps      | 172800      |
+| train/                  |             |
+|    approx_kl            | 0.017642297 |
+|    clip_fraction        | 0.18        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.752       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.693       |
+|    n_updates            | 320         |
+|    policy_gradient_loss | -0.0013     |
+|    value_loss           | 15.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 523         |
+|    iterations           | 5           |
+|    time_elapsed         | 412         |
+|    total_timesteps      | 216000      |
+| train/                  |             |
+|    approx_kl            | 0.016423995 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.769       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.238       |
+|    n_updates            | 330         |
+|    policy_gradient_loss | -0.00348    |
+|    value_loss           | 17.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+----------------------------------------
+| time/                   |            |
+|    fps                  | 508        |
+|    iterations           | 6          |
+|    time_elapsed         | 509        |
+|    total_timesteps      | 259200     |
+| train/                  |            |
+|    approx_kl            | 0.01582943 |
+|    clip_fraction        | 0.155      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.15      |
+|    explained_variance   | 0.734      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.688      |
+|    n_updates            | 340        |
+|    policy_gradient_loss | -0.00491   |
+|    value_loss           | 14.8       |
+----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 498         |
+|    iterations           | 7           |
+|    time_elapsed         | 606         |
+|    total_timesteps      | 302400      |
+| train/                  |             |
+|    approx_kl            | 0.019045277 |
+|    clip_fraction        | 0.176       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.778       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.729       |
+|    n_updates            | 350         |
+|    policy_gradient_loss | -0.00323    |
+|    value_loss           | 15.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 490         |
+|    iterations           | 8           |
+|    time_elapsed         | 705         |
+|    total_timesteps      | 345600      |
+| train/                  |             |
+|    approx_kl            | 0.018350422 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.789       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.17        |
+|    n_updates            | 360         |
+|    policy_gradient_loss | -0.0043     |
+|    value_loss           | 12.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 484         |
+|    iterations           | 9           |
+|    time_elapsed         | 802         |
+|    total_timesteps      | 388800      |
+| train/                  |             |
+|    approx_kl            | 0.018348452 |
+|    clip_fraction        | 0.183       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.797       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.45        |
+|    n_updates            | 370         |
+|    policy_gradient_loss | -0.000873   |
+|    value_loss           | 16          |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 480         |
+|    iterations           | 10          |
+|    time_elapsed         | 899         |
+|    total_timesteps      | 432000      |
+| train/                  |             |
+|    approx_kl            | 0.017740099 |
+|    clip_fraction        | 0.175       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.81        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.596       |
+|    n_updates            | 380         |
+|    policy_gradient_loss | -0.00329    |
+|    value_loss           | 20.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 475         |
+|    iterations           | 11          |
+|    time_elapsed         | 998         |
+|    total_timesteps      | 475200      |
+| train/                  |             |
+|    approx_kl            | 0.020382024 |
+|    clip_fraction        | 0.204       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.783       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.51        |
+|    n_updates            | 390         |
+|    policy_gradient_loss | -0.0046     |
+|    value_loss           | 17.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+----------------------------------------
+| time/                   |            |
+|    fps                  | 473        |
+|    iterations           | 12         |
+|    time_elapsed         | 1095       |
+|    total_timesteps      | 518400     |
+| train/                  |            |
+|    approx_kl            | 0.01975372 |
+|    clip_fraction        | 0.192      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.12      |
+|    explained_variance   | 0.78       |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.59       |
+|    n_updates            | 400        |
+|    policy_gradient_loss | -0.00151   |
+|    value_loss           | 22.9       |
+----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 470         |
+|    iterations           | 13          |
+|    time_elapsed         | 1192        |
+|    total_timesteps      | 561600      |
+| train/                  |             |
+|    approx_kl            | 0.019312538 |
+|    clip_fraction        | 0.199       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.697       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.05        |
+|    n_updates            | 410         |
+|    policy_gradient_loss | -0.000962   |
+|    value_loss           | 21.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 468         |
+|    iterations           | 14          |
+|    time_elapsed         | 1290        |
+|    total_timesteps      | 604800      |
+| train/                  |             |
+|    approx_kl            | 0.018606355 |
+|    clip_fraction        | 0.189       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.742       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.385       |
+|    n_updates            | 420         |
+|    policy_gradient_loss | -0.00191    |
+|    value_loss           | 18.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 467         |
+|    iterations           | 15          |
+|    time_elapsed         | 1387        |
+|    total_timesteps      | 648000      |
+| train/                  |             |
+|    approx_kl            | 0.017203132 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.787       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.26        |
+|    n_updates            | 430         |
+|    policy_gradient_loss | -0.0021     |
+|    value_loss           | 15.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 465         |
+|    iterations           | 16          |
+|    time_elapsed         | 1484        |
+|    total_timesteps      | 691200      |
+| train/                  |             |
+|    approx_kl            | 0.018841917 |
+|    clip_fraction        | 0.184       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.811       |
+|    n_updates            | 440         |
+|    policy_gradient_loss | -0.00263    |
+|    value_loss           | 12.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 464         |
+|    iterations           | 17          |
+|    time_elapsed         | 1581        |
+|    total_timesteps      | 734400      |
+| train/                  |             |
+|    approx_kl            | 0.016460957 |
+|    clip_fraction        | 0.161       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.809       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.47        |
+|    n_updates            | 450         |
+|    policy_gradient_loss | -0.00405    |
+|    value_loss           | 17.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 463         |
+|    iterations           | 18          |
+|    time_elapsed         | 1678        |
+|    total_timesteps      | 777600      |
+| train/                  |             |
+|    approx_kl            | 0.018824814 |
+|    clip_fraction        | 0.187       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.766       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.312       |
+|    n_updates            | 460         |
+|    policy_gradient_loss | -0.00269    |
+|    value_loss           | 15.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 462         |
+|    iterations           | 19          |
+|    time_elapsed         | 1776        |
+|    total_timesteps      | 820800      |
+| train/                  |             |
+|    approx_kl            | 0.017789861 |
+|    clip_fraction        | 0.168       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.762       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.01        |
+|    n_updates            | 470         |
+|    policy_gradient_loss | -0.00204    |
+|    value_loss           | 16.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 461         |
+|    iterations           | 20          |
+|    time_elapsed         | 1872        |
+|    total_timesteps      | 864000      |
+| train/                  |             |
+|    approx_kl            | 0.018345973 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.79        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.736       |
+|    n_updates            | 480         |
+|    policy_gradient_loss | -0.00369    |
+|    value_loss           | 12.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+----------------------------------------
+| time/                   |            |
+|    fps                  | 460        |
+|    iterations           | 21         |
+|    time_elapsed         | 1969       |
+|    total_timesteps      | 907200     |
+| train/                  |            |
+|    approx_kl            | 0.02151764 |
+|    clip_fraction        | 0.192      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.09      |
+|    explained_variance   | 0.782      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.267      |
+|    n_updates            | 490        |
+|    policy_gradient_loss | -0.00102   |
+|    value_loss           | 13.8       |
+----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 459         |
+|    iterations           | 22          |
+|    time_elapsed         | 2066        |
+|    total_timesteps      | 950400      |
+| train/                  |             |
+|    approx_kl            | 0.021028183 |
+|    clip_fraction        | 0.19        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.676       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.253       |
+|    n_updates            | 500         |
+|    policy_gradient_loss | -0.00186    |
+|    value_loss           | 20          |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 459         |
+|    iterations           | 23          |
+|    time_elapsed         | 2163        |
+|    total_timesteps      | 993600      |
+| train/                  |             |
+|    approx_kl            | 0.019285567 |
+|    clip_fraction        | 0.18        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.729       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.329       |
+|    n_updates            | 510         |
+|    policy_gradient_loss | -0.00156    |
+|    value_loss           | 20.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 458         |
+|    iterations           | 24          |
+|    time_elapsed         | 2260        |
+|    total_timesteps      | 1036800     |
+| train/                  |             |
+|    approx_kl            | 0.019038767 |
+|    clip_fraction        | 0.195       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.665       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.685       |
+|    n_updates            | 520         |
+|    policy_gradient_loss | -0.000273   |
+|    value_loss           | 15.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 458         |
+|    iterations           | 25          |
+|    time_elapsed         | 2357        |
+|    total_timesteps      | 1080000     |
+| train/                  |             |
+|    approx_kl            | 0.020219645 |
+|    clip_fraction        | 0.192       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.776       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.49        |
+|    n_updates            | 530         |
+|    policy_gradient_loss | -0.00111    |
+|    value_loss           | 21.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 457         |
+|    iterations           | 26          |
+|    time_elapsed         | 2455        |
+|    total_timesteps      | 1123200     |
+| train/                  |             |
+|    approx_kl            | 0.018398428 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.784       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.225       |
+|    n_updates            | 540         |
+|    policy_gradient_loss | -0.00625    |
+|    value_loss           | 12.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+----------------------------------------
+| time/                   |            |
+|    fps                  | 456        |
+|    iterations           | 27         |
+|    time_elapsed         | 2552       |
+|    total_timesteps      | 1166400    |
+| train/                  |            |
+|    approx_kl            | 0.02056862 |
+|    clip_fraction        | 0.178      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.1       |
+|    explained_variance   | 0.718      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.265      |
+|    n_updates            | 550        |
+|    policy_gradient_loss | -0.00118   |
+|    value_loss           | 21.3       |
+----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 456         |
+|    iterations           | 28          |
+|    time_elapsed         | 2649        |
+|    total_timesteps      | 1209600     |
+| train/                  |             |
+|    approx_kl            | 0.018739836 |
+|    clip_fraction        | 0.182       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.786       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.562       |
+|    n_updates            | 560         |
+|    policy_gradient_loss | -0.00141    |
+|    value_loss           | 16.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 456         |
+|    iterations           | 29          |
+|    time_elapsed         | 2747        |
+|    total_timesteps      | 1252800     |
+| train/                  |             |
+|    approx_kl            | 0.019046063 |
+|    clip_fraction        | 0.178       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.77        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.655       |
+|    n_updates            | 570         |
+|    policy_gradient_loss | -0.00238    |
+|    value_loss           | 19          |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 455         |
+|    iterations           | 30          |
+|    time_elapsed         | 2845        |
+|    total_timesteps      | 1296000     |
+| train/                  |             |
+|    approx_kl            | 0.017575732 |
+|    clip_fraction        | 0.181       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.763       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.461       |
+|    n_updates            | 580         |
+|    policy_gradient_loss | -0.00471    |
+|    value_loss           | 12.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 455         |
+|    iterations           | 31          |
+|    time_elapsed         | 2942        |
+|    total_timesteps      | 1339200     |
+| train/                  |             |
+|    approx_kl            | 0.020356499 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.772       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.84        |
+|    n_updates            | 590         |
+|    policy_gradient_loss | -0.00473    |
+|    value_loss           | 11.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+----------------------------------------
+| time/                   |            |
+|    fps                  | 454        |
+|    iterations           | 32         |
+|    time_elapsed         | 3039       |
+|    total_timesteps      | 1382400    |
+| train/                  |            |
+|    approx_kl            | 0.02154484 |
+|    clip_fraction        | 0.186      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.09      |
+|    explained_variance   | 0.82       |
+|    learning_rate        | 0.0002     |
+|    loss                 | 2.06       |
+|    n_updates            | 600        |
+|    policy_gradient_loss | 0.00338    |
+|    value_loss           | 23.1       |
+----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 454         |
+|    iterations           | 33          |
+|    time_elapsed         | 3137        |
+|    total_timesteps      | 1425600     |
+| train/                  |             |
+|    approx_kl            | 0.022631256 |
+|    clip_fraction        | 0.196       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.03       |
+|    explained_variance   | 0.81        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.664       |
+|    n_updates            | 610         |
+|    policy_gradient_loss | 0.0058      |
+|    value_loss           | 21.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 454         |
+|    iterations           | 34          |
+|    time_elapsed         | 3234        |
+|    total_timesteps      | 1468800     |
+| train/                  |             |
+|    approx_kl            | 0.019701418 |
+|    clip_fraction        | 0.172       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.833       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.15        |
+|    n_updates            | 620         |
+|    policy_gradient_loss | 0.00112     |
+|    value_loss           | 22.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 453         |
+|    iterations           | 35          |
+|    time_elapsed         | 3332        |
+|    total_timesteps      | 1512000     |
+| train/                  |             |
+|    approx_kl            | 0.020245243 |
+|    clip_fraction        | 0.183       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.05       |
+|    explained_variance   | 0.815       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.494       |
+|    n_updates            | 630         |
+|    policy_gradient_loss | -0.00146    |
+|    value_loss           | 13.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 453         |
+|    iterations           | 36          |
+|    time_elapsed         | 3430        |
+|    total_timesteps      | 1555200     |
+| train/                  |             |
+|    approx_kl            | 0.022184841 |
+|    clip_fraction        | 0.187       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.02       |
+|    explained_variance   | 0.761       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.232       |
+|    n_updates            | 640         |
+|    policy_gradient_loss | 0.00242     |
+|    value_loss           | 18.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+----------------------------------------
+| time/                   |            |
+|    fps                  | 453        |
+|    iterations           | 37         |
+|    time_elapsed         | 3526       |
+|    total_timesteps      | 1598400    |
+| train/                  |            |
+|    approx_kl            | 0.01909801 |
+|    clip_fraction        | 0.172      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.07      |
+|    explained_variance   | 0.82       |
+|    learning_rate        | 0.0002     |
+|    loss                 | 1.39       |
+|    n_updates            | 650        |
+|    policy_gradient_loss | 0.00125    |
+|    value_loss           | 18.5       |
+----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 453         |
+|    iterations           | 38          |
+|    time_elapsed         | 3623        |
+|    total_timesteps      | 1641600     |
+| train/                  |             |
+|    approx_kl            | 0.019127825 |
+|    clip_fraction        | 0.175       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.796       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.646       |
+|    n_updates            | 660         |
+|    policy_gradient_loss | -0.0033     |
+|    value_loss           | 15          |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 452         |
+|    iterations           | 39          |
+|    time_elapsed         | 3720        |
+|    total_timesteps      | 1684800     |
+| train/                  |             |
+|    approx_kl            | 0.018327592 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.718       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.905       |
+|    n_updates            | 670         |
+|    policy_gradient_loss | 0.000898    |
+|    value_loss           | 14.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 452         |
+|    iterations           | 40          |
+|    time_elapsed         | 3818        |
+|    total_timesteps      | 1728000     |
+| train/                  |             |
+|    approx_kl            | 0.019133803 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.03       |
+|    explained_variance   | 0.839       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.95        |
+|    n_updates            | 680         |
+|    policy_gradient_loss | -0.00206    |
+|    value_loss           | 17.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 452         |
+|    iterations           | 41          |
+|    time_elapsed         | 3916        |
+|    total_timesteps      | 1771200     |
+| train/                  |             |
+|    approx_kl            | 0.021123584 |
+|    clip_fraction        | 0.202       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.06       |
+|    explained_variance   | 0.775       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.615       |
+|    n_updates            | 690         |
+|    policy_gradient_loss | 0.000314    |
+|    value_loss           | 14          |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 452         |
+|    iterations           | 42          |
+|    time_elapsed         | 4013        |
+|    total_timesteps      | 1814400     |
+| train/                  |             |
+|    approx_kl            | 0.018802634 |
+|    clip_fraction        | 0.164       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.811       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.295       |
+|    n_updates            | 700         |
+|    policy_gradient_loss | 0.00141     |
+|    value_loss           | 19.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 43         |
+|    time_elapsed         | 4109       |
+|    total_timesteps      | 1857600    |
+| train/                  |            |
+|    approx_kl            | 0.01865595 |
+|    clip_fraction        | 0.169      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.04      |
+|    explained_variance   | 0.818      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.357      |
+|    n_updates            | 710        |
+|    policy_gradient_loss | 0.000324   |
+|    value_loss           | 19.1       |
+----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 44          |
+|    time_elapsed         | 4205        |
+|    total_timesteps      | 1900800     |
+| train/                  |             |
+|    approx_kl            | 0.022585243 |
+|    clip_fraction        | 0.195       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.768       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.515       |
+|    n_updates            | 720         |
+|    policy_gradient_loss | 0.00268     |
+|    value_loss           | 18.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 45          |
+|    time_elapsed         | 4301        |
+|    total_timesteps      | 1944000     |
+| train/                  |             |
+|    approx_kl            | 0.020417377 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.683       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.654       |
+|    n_updates            | 730         |
+|    policy_gradient_loss | 0.00203     |
+|    value_loss           | 20.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 46         |
+|    time_elapsed         | 4397       |
+|    total_timesteps      | 1987200    |
+| train/                  |            |
+|    approx_kl            | 0.01640241 |
+|    clip_fraction        | 0.136      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.09      |
+|    explained_variance   | 0.855      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.681      |
+|    n_updates            | 740        |
+|    policy_gradient_loss | -0.00244   |
+|    value_loss           | 18.1       |
+----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 47          |
+|    time_elapsed         | 4492        |
+|    total_timesteps      | 2030400     |
+| train/                  |             |
+|    approx_kl            | 0.020942345 |
+|    clip_fraction        | 0.155       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.799       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.847       |
+|    n_updates            | 750         |
+|    policy_gradient_loss | 0.00232     |
+|    value_loss           | 20.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 48         |
+|    time_elapsed         | 4588       |
+|    total_timesteps      | 2073600    |
+| train/                  |            |
+|    approx_kl            | 0.02003836 |
+|    clip_fraction        | 0.168      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.07      |
+|    explained_variance   | 0.815      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.501      |
+|    n_updates            | 760        |
+|    policy_gradient_loss | -0.0017    |
+|    value_loss           | 13.2       |
+----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 49          |
+|    time_elapsed         | 4684        |
+|    total_timesteps      | 2116800     |
+| train/                  |             |
+|    approx_kl            | 0.022403738 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.735       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 4.1         |
+|    n_updates            | 770         |
+|    policy_gradient_loss | 0.00325     |
+|    value_loss           | 35.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 50          |
+|    time_elapsed         | 4780        |
+|    total_timesteps      | 2160000     |
+| train/                  |             |
+|    approx_kl            | 0.020465719 |
+|    clip_fraction        | 0.171       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.814       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.346       |
+|    n_updates            | 780         |
+|    policy_gradient_loss | 0.00119     |
+|    value_loss           | 18.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 51          |
+|    time_elapsed         | 4877        |
+|    total_timesteps      | 2203200     |
+| train/                  |             |
+|    approx_kl            | 0.019918704 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.823       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.223       |
+|    n_updates            | 790         |
+|    policy_gradient_loss | -0.0011     |
+|    value_loss           | 16          |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 52          |
+|    time_elapsed         | 4973        |
+|    total_timesteps      | 2246400     |
+| train/                  |             |
+|    approx_kl            | 0.026293177 |
+|    clip_fraction        | 0.189       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.01       |
+|    explained_variance   | 0.786       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.37        |
+|    n_updates            | 800         |
+|    policy_gradient_loss | 0.00725     |
+|    value_loss           | 21.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 53          |
+|    time_elapsed         | 5068        |
+|    total_timesteps      | 2289600     |
+| train/                  |             |
+|    approx_kl            | 0.018323697 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.06       |
+|    explained_variance   | 0.822       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.02        |
+|    n_updates            | 810         |
+|    policy_gradient_loss | 0.000499    |
+|    value_loss           | 17.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 54          |
+|    time_elapsed         | 5164        |
+|    total_timesteps      | 2332800     |
+| train/                  |             |
+|    approx_kl            | 0.022256708 |
+|    clip_fraction        | 0.186       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.781       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.717       |
+|    n_updates            | 820         |
+|    policy_gradient_loss | 0.00159     |
+|    value_loss           | 16.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 55          |
+|    time_elapsed         | 5260        |
+|    total_timesteps      | 2376000     |
+| train/                  |             |
+|    approx_kl            | 0.020457426 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -7.99       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.93        |
+|    n_updates            | 830         |
+|    policy_gradient_loss | -0.00147    |
+|    value_loss           | 17.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+---------------------------------------
+| time/                   |           |
+|    fps                  | 451       |
+|    iterations           | 56        |
+|    time_elapsed         | 5356      |
+|    total_timesteps      | 2419200   |
+| train/                  |           |
+|    approx_kl            | 0.0213855 |
+|    clip_fraction        | 0.178     |
+|    clip_range           | 0.2       |
+|    entropy_loss         | -8.05     |
+|    explained_variance   | 0.728     |
+|    learning_rate        | 0.0002    |
+|    loss                 | 0.302     |
+|    n_updates            | 840       |
+|    policy_gradient_loss | 0.00053   |
+|    value_loss           | 17.1      |
+---------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 57          |
+|    time_elapsed         | 5451        |
+|    total_timesteps      | 2462400     |
+| train/                  |             |
+|    approx_kl            | 0.021137744 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.788       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.303       |
+|    n_updates            | 850         |
+|    policy_gradient_loss | -0.00111    |
+|    value_loss           | 14.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 58         |
+|    time_elapsed         | 5547       |
+|    total_timesteps      | 2505600    |
+| train/                  |            |
+|    approx_kl            | 0.02023245 |
+|    clip_fraction        | 0.169      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.05      |
+|    explained_variance   | 0.816      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.361      |
+|    n_updates            | 860        |
+|    policy_gradient_loss | 0.000275   |
+|    value_loss           | 16.8       |
+----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 59          |
+|    time_elapsed         | 5643        |
+|    total_timesteps      | 2548800     |
+| train/                  |             |
+|    approx_kl            | 0.019979084 |
+|    clip_fraction        | 0.175       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.204       |
+|    n_updates            | 870         |
+|    policy_gradient_loss | -0.00152    |
+|    value_loss           | 12.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 60         |
+|    time_elapsed         | 5740       |
+|    total_timesteps      | 2592000    |
+| train/                  |            |
+|    approx_kl            | 0.02290177 |
+|    clip_fraction        | 0.189      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.06      |
+|    explained_variance   | 0.744      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.599      |
+|    n_updates            | 880        |
+|    policy_gradient_loss | 0.00403    |
+|    value_loss           | 22.4       |
+----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 61          |
+|    time_elapsed         | 5837        |
+|    total_timesteps      | 2635200     |
+| train/                  |             |
+|    approx_kl            | 0.019065047 |
+|    clip_fraction        | 0.172       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.06       |
+|    explained_variance   | 0.736       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.933       |
+|    n_updates            | 890         |
+|    policy_gradient_loss | -0.000417   |
+|    value_loss           | 20.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 451         |
+|    iterations           | 62          |
+|    time_elapsed         | 5935        |
+|    total_timesteps      | 2678400     |
+| train/                  |             |
+|    approx_kl            | 0.018739864 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.818       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.44        |
+|    n_updates            | 900         |
+|    policy_gradient_loss | -0.002      |
+|    value_loss           | 15.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+----------------------------------------
+| time/                   |            |
+|    fps                  | 451        |
+|    iterations           | 63         |
+|    time_elapsed         | 6032       |
+|    total_timesteps      | 2721600    |
+| train/                  |            |
+|    approx_kl            | 0.02123648 |
+|    clip_fraction        | 0.172      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.03      |
+|    explained_variance   | 0.82       |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.792      |
+|    n_updates            | 910        |
+|    policy_gradient_loss | 8.58e-05   |
+|    value_loss           | 16         |
+----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 64          |
+|    time_elapsed         | 6130        |
+|    total_timesteps      | 2764800     |
+| train/                  |             |
+|    approx_kl            | 0.024432074 |
+|    clip_fraction        | 0.209       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -7.99       |
+|    explained_variance   | 0.829       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.864       |
+|    n_updates            | 920         |
+|    policy_gradient_loss | 0.00649     |
+|    value_loss           | 20          |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 65          |
+|    time_elapsed         | 6228        |
+|    total_timesteps      | 2808000     |
+| train/                  |             |
+|    approx_kl            | 0.022781633 |
+|    clip_fraction        | 0.184       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.78        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.75        |
+|    n_updates            | 930         |
+|    policy_gradient_loss | 0.00143     |
+|    value_loss           | 16.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 66          |
+|    time_elapsed         | 6327        |
+|    total_timesteps      | 2851200     |
+| train/                  |             |
+|    approx_kl            | 0.020004842 |
+|    clip_fraction        | 0.165       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.784       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.68        |
+|    n_updates            | 940         |
+|    policy_gradient_loss | -0.000158   |
+|    value_loss           | 24.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 67          |
+|    time_elapsed         | 6425        |
+|    total_timesteps      | 2894400     |
+| train/                  |             |
+|    approx_kl            | 0.019052736 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.801       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.805       |
+|    n_updates            | 950         |
+|    policy_gradient_loss | -0.00147    |
+|    value_loss           | 16.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 68          |
+|    time_elapsed         | 6522        |
+|    total_timesteps      | 2937600     |
+| train/                  |             |
+|    approx_kl            | 0.018338915 |
+|    clip_fraction        | 0.166       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.824       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.278       |
+|    n_updates            | 960         |
+|    policy_gradient_loss | -0.00394    |
+|    value_loss           | 14.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 69          |
+|    time_elapsed         | 6619        |
+|    total_timesteps      | 2980800     |
+| train/                  |             |
+|    approx_kl            | 0.022207119 |
+|    clip_fraction        | 0.203       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.03       |
+|    explained_variance   | 0.777       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.76        |
+|    n_updates            | 970         |
+|    policy_gradient_loss | 0.00349     |
+|    value_loss           | 21.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 70          |
+|    time_elapsed         | 6717        |
+|    total_timesteps      | 3024000     |
+| train/                  |             |
+|    approx_kl            | 0.023251278 |
+|    clip_fraction        | 0.207       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8          |
+|    explained_variance   | 0.769       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.308       |
+|    n_updates            | 980         |
+|    policy_gradient_loss | 0.00178     |
+|    value_loss           | 16.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 450         |
+|    iterations           | 71          |
+|    time_elapsed         | 6815        |
+|    total_timesteps      | 3067200     |
+| train/                  |             |
+|    approx_kl            | 0.018753793 |
+|    clip_fraction        | 0.166       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.772       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.91        |
+|    n_updates            | 990         |
+|    policy_gradient_loss | 0.000509    |
+|    value_loss           | 20          |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 72          |
+|    time_elapsed         | 6913        |
+|    total_timesteps      | 3110400     |
+| train/                  |             |
+|    approx_kl            | 0.018791752 |
+|    clip_fraction        | 0.185       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.01       |
+|    explained_variance   | 0.716       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.526       |
+|    n_updates            | 1000        |
+|    policy_gradient_loss | 0.00248     |
+|    value_loss           | 17.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+----------------------------------------
+| time/                   |            |
+|    fps                  | 449        |
+|    iterations           | 73         |
+|    time_elapsed         | 7011       |
+|    total_timesteps      | 3153600    |
+| train/                  |            |
+|    approx_kl            | 0.02178302 |
+|    clip_fraction        | 0.18       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.03      |
+|    explained_variance   | 0.675      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 2.77       |
+|    n_updates            | 1010       |
+|    policy_gradient_loss | 0.00759    |
+|    value_loss           | 30.3       |
+----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 74          |
+|    time_elapsed         | 7108        |
+|    total_timesteps      | 3196800     |
+| train/                  |             |
+|    approx_kl            | 0.019278381 |
+|    clip_fraction        | 0.171       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.05       |
+|    explained_variance   | 0.748       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.566       |
+|    n_updates            | 1020        |
+|    policy_gradient_loss | 0.000132    |
+|    value_loss           | 15.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 75          |
+|    time_elapsed         | 7206        |
+|    total_timesteps      | 3240000     |
+| train/                  |             |
+|    approx_kl            | 0.018280571 |
+|    clip_fraction        | 0.153       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.716       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.45        |
+|    n_updates            | 1030        |
+|    policy_gradient_loss | 0.000711    |
+|    value_loss           | 23.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 76          |
+|    time_elapsed         | 7303        |
+|    total_timesteps      | 3283200     |
+| train/                  |             |
+|    approx_kl            | 0.017658442 |
+|    clip_fraction        | 0.154       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.838       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.92        |
+|    n_updates            | 1040        |
+|    policy_gradient_loss | 0.000735    |
+|    value_loss           | 20          |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 77          |
+|    time_elapsed         | 7401        |
+|    total_timesteps      | 3326400     |
+| train/                  |             |
+|    approx_kl            | 0.019725492 |
+|    clip_fraction        | 0.176       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.05       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.38        |
+|    n_updates            | 1050        |
+|    policy_gradient_loss | 0.00148     |
+|    value_loss           | 28.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 78          |
+|    time_elapsed         | 7498        |
+|    total_timesteps      | 3369600     |
+| train/                  |             |
+|    approx_kl            | 0.016949095 |
+|    clip_fraction        | 0.152       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.784       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.878       |
+|    n_updates            | 1060        |
+|    policy_gradient_loss | -0.00178    |
+|    value_loss           | 19.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+----------------------------------------
+| time/                   |            |
+|    fps                  | 449        |
+|    iterations           | 79         |
+|    time_elapsed         | 7596       |
+|    total_timesteps      | 3412800    |
+| train/                  |            |
+|    approx_kl            | 0.02026636 |
+|    clip_fraction        | 0.181      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.05      |
+|    explained_variance   | 0.775      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 3.35       |
+|    n_updates            | 1070       |
+|    policy_gradient_loss | 0.000907   |
+|    value_loss           | 15         |
+----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 80          |
+|    time_elapsed         | 7693        |
+|    total_timesteps      | 3456000     |
+| train/                  |             |
+|    approx_kl            | 0.020292694 |
+|    clip_fraction        | 0.172       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.729       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.937       |
+|    n_updates            | 1080        |
+|    policy_gradient_loss | -0.000479   |
+|    value_loss           | 14.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 81          |
+|    time_elapsed         | 7790        |
+|    total_timesteps      | 3499200     |
+| train/                  |             |
+|    approx_kl            | 0.021046823 |
+|    clip_fraction        | 0.17        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.814       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.19        |
+|    n_updates            | 1090        |
+|    policy_gradient_loss | 0.00343     |
+|    value_loss           | 21.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 82          |
+|    time_elapsed         | 7888        |
+|    total_timesteps      | 3542400     |
+| train/                  |             |
+|    approx_kl            | 0.018265078 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.771       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.41        |
+|    n_updates            | 1100        |
+|    policy_gradient_loss | -0.00154    |
+|    value_loss           | 17.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+----------------------------------------
+| time/                   |            |
+|    fps                  | 448        |
+|    iterations           | 83         |
+|    time_elapsed         | 7986       |
+|    total_timesteps      | 3585600    |
+| train/                  |            |
+|    approx_kl            | 0.01761453 |
+|    clip_fraction        | 0.156      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.08      |
+|    explained_variance   | 0.848      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 1.5        |
+|    n_updates            | 1110       |
+|    policy_gradient_loss | 4e-05      |
+|    value_loss           | 22.4       |
+----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 84          |
+|    time_elapsed         | 8083        |
+|    total_timesteps      | 3628800     |
+| train/                  |             |
+|    approx_kl            | 0.019479048 |
+|    clip_fraction        | 0.167       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.93        |
+|    n_updates            | 1120        |
+|    policy_gradient_loss | -0.00179    |
+|    value_loss           | 16.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level4.ChunLiVsDhalsim
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 85          |
+|    time_elapsed         | 8180        |
+|    total_timesteps      | 3672000     |
+| train/                  |             |
+|    approx_kl            | 0.017283197 |
+|    clip_fraction        | 0.149       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.54        |
+|    n_updates            | 1130        |
+|    policy_gradient_loss | -0.00178    |
+|    value_loss           | 20.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 86          |
+|    time_elapsed         | 8278        |
+|    total_timesteps      | 3715200     |
+| train/                  |             |
+|    approx_kl            | 0.019106768 |
+|    clip_fraction        | 0.178       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.787       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 4.53        |
+|    n_updates            | 1140        |
+|    policy_gradient_loss | 0.00461     |
+|    value_loss           | 25.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 87          |
+|    time_elapsed         | 8376        |
+|    total_timesteps      | 3758400     |
+| train/                  |             |
+|    approx_kl            | 0.019611303 |
+|    clip_fraction        | 0.182       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.7         |
+|    n_updates            | 1150        |
+|    policy_gradient_loss | 0.000516    |
+|    value_loss           | 16.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 88          |
+|    time_elapsed         | 8473        |
+|    total_timesteps      | 3801600     |
+| train/                  |             |
+|    approx_kl            | 0.017416934 |
+|    clip_fraction        | 0.168       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.05       |
+|    explained_variance   | 0.773       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.32        |
+|    n_updates            | 1160        |
+|    policy_gradient_loss | 0.000683    |
+|    value_loss           | 26.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 89          |
+|    time_elapsed         | 8570        |
+|    total_timesteps      | 3844800     |
+| train/                  |             |
+|    approx_kl            | 0.020442067 |
+|    clip_fraction        | 0.18        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.799       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.598       |
+|    n_updates            | 1170        |
+|    policy_gradient_loss | 0.00176     |
+|    value_loss           | 15          |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 90          |
+|    time_elapsed         | 8668        |
+|    total_timesteps      | 3888000     |
+| train/                  |             |
+|    approx_kl            | 0.017660897 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.795       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.928       |
+|    n_updates            | 1180        |
+|    policy_gradient_loss | 0.00123     |
+|    value_loss           | 17.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 91          |
+|    time_elapsed         | 8766        |
+|    total_timesteps      | 3931200     |
+| train/                  |             |
+|    approx_kl            | 0.016381918 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.06       |
+|    explained_variance   | 0.811       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.488       |
+|    n_updates            | 1190        |
+|    policy_gradient_loss | 0.000215    |
+|    value_loss           | 13.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 92          |
+|    time_elapsed         | 8863        |
+|    total_timesteps      | 3974400     |
+| train/                  |             |
+|    approx_kl            | 0.017840233 |
+|    clip_fraction        | 0.167       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.03       |
+|    explained_variance   | 0.762       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.54        |
+|    n_updates            | 1200        |
+|    policy_gradient_loss | 0.00261     |
+|    value_loss           | 20.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 93          |
+|    time_elapsed         | 8961        |
+|    total_timesteps      | 4017600     |
+| train/                  |             |
+|    approx_kl            | 0.020303266 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.05       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.876       |
+|    n_updates            | 1210        |
+|    policy_gradient_loss | 0.00217     |
+|    value_loss           | 19.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 94          |
+|    time_elapsed         | 9058        |
+|    total_timesteps      | 4060800     |
+| train/                  |             |
+|    approx_kl            | 0.018209128 |
+|    clip_fraction        | 0.158       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.827       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.47        |
+|    n_updates            | 1220        |
+|    policy_gradient_loss | 0.00344     |
+|    value_loss           | 22.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 95          |
+|    time_elapsed         | 9155        |
+|    total_timesteps      | 4104000     |
+| train/                  |             |
+|    approx_kl            | 0.016349936 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.07       |
+|    explained_variance   | 0.816       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.436       |
+|    n_updates            | 1230        |
+|    policy_gradient_loss | -0.00384    |
+|    value_loss           | 12.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 96          |
+|    time_elapsed         | 9253        |
+|    total_timesteps      | 4147200     |
+| train/                  |             |
+|    approx_kl            | 0.016977612 |
+|    clip_fraction        | 0.148       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.09       |
+|    explained_variance   | 0.807       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.708       |
+|    n_updates            | 1240        |
+|    policy_gradient_loss | 0.000471    |
+|    value_loss           | 20.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 97          |
+|    time_elapsed         | 9349        |
+|    total_timesteps      | 4190400     |
+| train/                  |             |
+|    approx_kl            | 0.020063082 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.751       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.891       |
+|    n_updates            | 1250        |
+|    policy_gradient_loss | 0.00348     |
+|    value_loss           | 21.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 98          |
+|    time_elapsed         | 9445        |
+|    total_timesteps      | 4233600     |
+| train/                  |             |
+|    approx_kl            | 0.019297507 |
+|    clip_fraction        | 0.163       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.773       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.771       |
+|    n_updates            | 1260        |
+|    policy_gradient_loss | 0.0029      |
+|    value_loss           | 15.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level11.ChunLiVsSagat
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 99          |
+|    time_elapsed         | 9540        |
+|    total_timesteps      | 4276800     |
+| train/                  |             |
+|    approx_kl            | 0.017202292 |
+|    clip_fraction        | 0.154       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.818       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.97        |
+|    n_updates            | 1270        |
+|    policy_gradient_loss | 0.00314     |
+|    value_loss           | 22.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 100         |
+|    time_elapsed         | 9635        |
+|    total_timesteps      | 4320000     |
+| train/                  |             |
+|    approx_kl            | 0.019228933 |
+|    clip_fraction        | 0.172       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.04       |
+|    explained_variance   | 0.803       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.84        |
+|    n_updates            | 1280        |
+|    policy_gradient_loss | 0.00495     |
+|    value_loss           | 27.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+----------------------------------------
+| time/                   |            |
+|    fps                  | 448        |
+|    iterations           | 101        |
+|    time_elapsed         | 9732       |
+|    total_timesteps      | 4363200    |
+| train/                  |            |
+|    approx_kl            | 0.01626399 |
+|    clip_fraction        | 0.148      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.1       |
+|    explained_variance   | 0.863      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 1.23       |
+|    n_updates            | 1290       |
+|    policy_gradient_loss | -0.000295  |
+|    value_loss           | 18.7       |
+----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+----------------------------------------
+| time/                   |            |
+|    fps                  | 448        |
+|    iterations           | 102        |
+|    time_elapsed         | 9827       |
+|    total_timesteps      | 4406400    |
+| train/                  |            |
+|    approx_kl            | 0.01741675 |
+|    clip_fraction        | 0.167      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.06      |
+|    explained_variance   | 0.81       |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.693      |
+|    n_updates            | 1300       |
+|    policy_gradient_loss | 0.00085    |
+|    value_loss           | 16.9       |
+----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 103         |
+|    time_elapsed         | 9922        |
+|    total_timesteps      | 4449600     |
+| train/                  |             |
+|    approx_kl            | 0.017767375 |
+|    clip_fraction        | 0.146       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.44        |
+|    n_updates            | 1310        |
+|    policy_gradient_loss | 0.000446    |
+|    value_loss           | 16.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 104         |
+|    time_elapsed         | 10018       |
+|    total_timesteps      | 4492800     |
+| train/                  |             |
+|    approx_kl            | 0.018537082 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.06       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.594       |
+|    n_updates            | 1320        |
+|    policy_gradient_loss | 0.00192     |
+|    value_loss           | 16.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 105         |
+|    time_elapsed         | 10113       |
+|    total_timesteps      | 4536000     |
+| train/                  |             |
+|    approx_kl            | 0.016387263 |
+|    clip_fraction        | 0.151       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.779       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.897       |
+|    n_updates            | 1330        |
+|    policy_gradient_loss | 0.00349     |
+|    value_loss           | 24          |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 106         |
+|    time_elapsed         | 10208       |
+|    total_timesteps      | 4579200     |
+| train/                  |             |
+|    approx_kl            | 0.016566757 |
+|    clip_fraction        | 0.168       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.1        |
+|    explained_variance   | 0.826       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.545       |
+|    n_updates            | 1340        |
+|    policy_gradient_loss | 0.00131     |
+|    value_loss           | 16.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 107         |
+|    time_elapsed         | 10304       |
+|    total_timesteps      | 4622400     |
+| train/                  |             |
+|    approx_kl            | 0.015347375 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.08       |
+|    explained_variance   | 0.81        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.311       |
+|    n_updates            | 1350        |
+|    policy_gradient_loss | -0.00268    |
+|    value_loss           | 12.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 108         |
+|    time_elapsed         | 10400       |
+|    total_timesteps      | 4665600     |
+| train/                  |             |
+|    approx_kl            | 0.016015483 |
+|    clip_fraction        | 0.155       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.797       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.26        |
+|    n_updates            | 1360        |
+|    policy_gradient_loss | -0.00208    |
+|    value_loss           | 20.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 109         |
+|    time_elapsed         | 10495       |
+|    total_timesteps      | 4708800     |
+| train/                  |             |
+|    approx_kl            | 0.016567804 |
+|    clip_fraction        | 0.155       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.829       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.34        |
+|    n_updates            | 1370        |
+|    policy_gradient_loss | 0.0028      |
+|    value_loss           | 17.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 110         |
+|    time_elapsed         | 10591       |
+|    total_timesteps      | 4752000     |
+| train/                  |             |
+|    approx_kl            | 0.018200098 |
+|    clip_fraction        | 0.168       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.831       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.665       |
+|    n_updates            | 1380        |
+|    policy_gradient_loss | 0.00141     |
+|    value_loss           | 19.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 111         |
+|    time_elapsed         | 10686       |
+|    total_timesteps      | 4795200     |
+| train/                  |             |
+|    approx_kl            | 0.018930672 |
+|    clip_fraction        | 0.185       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.833       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.09        |
+|    n_updates            | 1390        |
+|    policy_gradient_loss | 0.00529     |
+|    value_loss           | 19.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 112         |
+|    time_elapsed         | 10782       |
+|    total_timesteps      | 4838400     |
+| train/                  |             |
+|    approx_kl            | 0.015160192 |
+|    clip_fraction        | 0.158       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.833       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.37        |
+|    n_updates            | 1400        |
+|    policy_gradient_loss | -0.000663   |
+|    value_loss           | 21          |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 113         |
+|    time_elapsed         | 10878       |
+|    total_timesteps      | 4881600     |
+| train/                  |             |
+|    approx_kl            | 0.017860955 |
+|    clip_fraction        | 0.171       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.82        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.924       |
+|    n_updates            | 1410        |
+|    policy_gradient_loss | -0.000111   |
+|    value_loss           | 16.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+----------------------------------------
+| time/                   |            |
+|    fps                  | 448        |
+|    iterations           | 114        |
+|    time_elapsed         | 10974      |
+|    total_timesteps      | 4924800    |
+| train/                  |            |
+|    approx_kl            | 0.02072464 |
+|    clip_fraction        | 0.183      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.15      |
+|    explained_variance   | 0.788      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 1.77       |
+|    n_updates            | 1420       |
+|    policy_gradient_loss | 0.00299    |
+|    value_loss           | 23.1       |
+----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 115         |
+|    time_elapsed         | 11069       |
+|    total_timesteps      | 4968000     |
+| train/                  |             |
+|    approx_kl            | 0.016052378 |
+|    clip_fraction        | 0.158       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.845       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.692       |
+|    n_updates            | 1430        |
+|    policy_gradient_loss | -0.00267    |
+|    value_loss           | 16.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 116         |
+|    time_elapsed         | 11165       |
+|    total_timesteps      | 5011200     |
+| train/                  |             |
+|    approx_kl            | 0.019034935 |
+|    clip_fraction        | 0.177       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.814       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.25        |
+|    n_updates            | 1440        |
+|    policy_gradient_loss | -0.000176   |
+|    value_loss           | 20.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 117         |
+|    time_elapsed         | 11260       |
+|    total_timesteps      | 5054400     |
+| train/                  |             |
+|    approx_kl            | 0.017005827 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.811       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 2.66        |
+|    n_updates            | 1450        |
+|    policy_gradient_loss | 0.000235    |
+|    value_loss           | 14          |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 118         |
+|    time_elapsed         | 11356       |
+|    total_timesteps      | 5097600     |
+| train/                  |             |
+|    approx_kl            | 0.016972119 |
+|    clip_fraction        | 0.169       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.785       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.495       |
+|    n_updates            | 1460        |
+|    policy_gradient_loss | 0.00187     |
+|    value_loss           | 19.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 119         |
+|    time_elapsed         | 11451       |
+|    total_timesteps      | 5140800     |
+| train/                  |             |
+|    approx_kl            | 0.015783915 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.812       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.603       |
+|    n_updates            | 1470        |
+|    policy_gradient_loss | -0.000571   |
+|    value_loss           | 21.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 120         |
+|    time_elapsed         | 11547       |
+|    total_timesteps      | 5184000     |
+| train/                  |             |
+|    approx_kl            | 0.017954912 |
+|    clip_fraction        | 0.186       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.781       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.7         |
+|    n_updates            | 1480        |
+|    policy_gradient_loss | 0.00359     |
+|    value_loss           | 24.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 121         |
+|    time_elapsed         | 11642       |
+|    total_timesteps      | 5227200     |
+| train/                  |             |
+|    approx_kl            | 0.017439196 |
+|    clip_fraction        | 0.182       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.782       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.972       |
+|    n_updates            | 1490        |
+|    policy_gradient_loss | 0.0017      |
+|    value_loss           | 21.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 122         |
+|    time_elapsed         | 11738       |
+|    total_timesteps      | 5270400     |
+| train/                  |             |
+|    approx_kl            | 0.016962286 |
+|    clip_fraction        | 0.173       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.807       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.875       |
+|    n_updates            | 1500        |
+|    policy_gradient_loss | 0.000824    |
+|    value_loss           | 18.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level12.ChunLiVsBison
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 123         |
+|    time_elapsed         | 11833       |
+|    total_timesteps      | 5313600     |
+| train/                  |             |
+|    approx_kl            | 0.017236924 |
+|    clip_fraction        | 0.162       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.779       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.853       |
+|    n_updates            | 1510        |
+|    policy_gradient_loss | 0.000141    |
+|    value_loss           | 18.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 124         |
+|    time_elapsed         | 11928       |
+|    total_timesteps      | 5356800     |
+| train/                  |             |
+|    approx_kl            | 0.016021965 |
+|    clip_fraction        | 0.157       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.83        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1           |
+|    n_updates            | 1520        |
+|    policy_gradient_loss | 0.00109     |
+|    value_loss           | 20          |
+-----------------------------------------
+
+Current state: ChampionX.Level10.ChunLiVsVega
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 125         |
+|    time_elapsed         | 12024       |
+|    total_timesteps      | 5400000     |
+| train/                  |             |
+|    approx_kl            | 0.015824681 |
+|    clip_fraction        | 0.166       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.18       |
+|    explained_variance   | 0.803       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.51        |
+|    n_updates            | 1530        |
+|    policy_gradient_loss | 0.00165     |
+|    value_loss           | 17.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 126         |
+|    time_elapsed         | 12119       |
+|    total_timesteps      | 5443200     |
+| train/                  |             |
+|    approx_kl            | 0.014095656 |
+|    clip_fraction        | 0.14        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.809       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.666       |
+|    n_updates            | 1540        |
+|    policy_gradient_loss | -0.00077    |
+|    value_loss           | 20.5        |
+-----------------------------------------
+
+Current state: ChampionX.Level9.ChunLiVsBalrog
+----------------------------------------
+| time/                   |            |
+|    fps                  | 449        |
+|    iterations           | 127        |
+|    time_elapsed         | 12216      |
+|    total_timesteps      | 5486400    |
+| train/                  |            |
+|    approx_kl            | 0.01563808 |
+|    clip_fraction        | 0.154      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -8.15      |
+|    explained_variance   | 0.798      |
+|    learning_rate        | 0.0002     |
+|    loss                 | 0.739      |
+|    n_updates            | 1550       |
+|    policy_gradient_loss | -0.000601  |
+|    value_loss           | 17.6       |
+----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 128         |
+|    time_elapsed         | 12311       |
+|    total_timesteps      | 5529600     |
+| train/                  |             |
+|    approx_kl            | 0.016478073 |
+|    clip_fraction        | 0.159       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.763       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.21        |
+|    n_updates            | 1560        |
+|    policy_gradient_loss | 0.000911    |
+|    value_loss           | 21.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level6.ChunLiVsEHonda
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 129         |
+|    time_elapsed         | 12407       |
+|    total_timesteps      | 5572800     |
+| train/                  |             |
+|    approx_kl            | 0.016799105 |
+|    clip_fraction        | 0.155       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.795       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.04        |
+|    n_updates            | 1570        |
+|    policy_gradient_loss | 0.00415     |
+|    value_loss           | 33.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level8.ChunLiVsGuile
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 130         |
+|    time_elapsed         | 12503       |
+|    total_timesteps      | 5616000     |
+| train/                  |             |
+|    approx_kl            | 0.013092292 |
+|    clip_fraction        | 0.136       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.15       |
+|    explained_variance   | 0.801       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.22        |
+|    n_updates            | 1580        |
+|    policy_gradient_loss | -0.00466    |
+|    value_loss           | 16.9        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 131         |
+|    time_elapsed         | 12598       |
+|    total_timesteps      | 5659200     |
+| train/                  |             |
+|    approx_kl            | 0.022095175 |
+|    clip_fraction        | 0.218       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.767       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.75        |
+|    n_updates            | 1590        |
+|    policy_gradient_loss | 0.00969     |
+|    value_loss           | 28.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 132         |
+|    time_elapsed         | 12693       |
+|    total_timesteps      | 5702400     |
+| train/                  |             |
+|    approx_kl            | 0.015401343 |
+|    clip_fraction        | 0.155       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.783       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.389       |
+|    n_updates            | 1600        |
+|    policy_gradient_loss | 0.00122     |
+|    value_loss           | 16.4        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 133         |
+|    time_elapsed         | 12789       |
+|    total_timesteps      | 5745600     |
+| train/                  |             |
+|    approx_kl            | 0.013617316 |
+|    clip_fraction        | 0.135       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.82        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.51        |
+|    n_updates            | 1610        |
+|    policy_gradient_loss | -0.0011     |
+|    value_loss           | 18.3        |
+-----------------------------------------
+
+Current state: ChampionX.Level1.ChunLiVsKen
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 134         |
+|    time_elapsed         | 12886       |
+|    total_timesteps      | 5788800     |
+| train/                  |             |
+|    approx_kl            | 0.018610569 |
+|    clip_fraction        | 0.2         |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.11       |
+|    explained_variance   | 0.72        |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.652       |
+|    n_updates            | 1620        |
+|    policy_gradient_loss | 0.00408     |
+|    value_loss           | 24.8        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 135         |
+|    time_elapsed         | 12984       |
+|    total_timesteps      | 5832000     |
+| train/                  |             |
+|    approx_kl            | 0.013793538 |
+|    clip_fraction        | 0.135       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.811       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.18        |
+|    n_updates            | 1630        |
+|    policy_gradient_loss | 3.8e-05     |
+|    value_loss           | 19.7        |
+-----------------------------------------
+
+Current state: ChampionX.Level3.ChunLiVsZangief
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 136         |
+|    time_elapsed         | 13081       |
+|    total_timesteps      | 5875200     |
+| train/                  |             |
+|    approx_kl            | 0.015575893 |
+|    clip_fraction        | 0.164       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.803       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.503       |
+|    n_updates            | 1640        |
+|    policy_gradient_loss | 0.000462    |
+|    value_loss           | 17.1        |
+-----------------------------------------
+
+Current state: ChampionX.Level7.ChunLiVsBlanka
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 137         |
+|    time_elapsed         | 13178       |
+|    total_timesteps      | 5918400     |
+| train/                  |             |
+|    approx_kl            | 0.016451944 |
+|    clip_fraction        | 0.165       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.12       |
+|    explained_variance   | 0.802       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.83        |
+|    n_updates            | 1650        |
+|    policy_gradient_loss | 0.000427    |
+|    value_loss           | 19.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level2.ChunLiVsChunLi
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 138         |
+|    time_elapsed         | 13275       |
+|    total_timesteps      | 5961600     |
+| train/                  |             |
+|    approx_kl            | 0.013083423 |
+|    clip_fraction        | 0.132       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.13       |
+|    explained_variance   | 0.816       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.46        |
+|    n_updates            | 1660        |
+|    policy_gradient_loss | -0.000823   |
+|    value_loss           | 23.6        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 449         |
+|    iterations           | 139         |
+|    time_elapsed         | 13373       |
+|    total_timesteps      | 6004800     |
+| train/                  |             |
+|    approx_kl            | 0.016260127 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.14       |
+|    explained_variance   | 0.805       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 1.25        |
+|    n_updates            | 1670        |
+|    policy_gradient_loss | -0.000364   |
+|    value_loss           | 16.2        |
+-----------------------------------------
+
+Current state: ChampionX.Level5.ChunLiVsRyu
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 448         |
+|    iterations           | 140         |
+|    time_elapsed         | 13470       |
+|    total_timesteps      | 6048000     |
+| train/                  |             |
+|    approx_kl            | 0.016119048 |
+|    clip_fraction        | 0.162       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.16       |
+|    explained_variance   | 0.796       |
+|    learning_rate        | 0.0002      |
+|    loss                 | 0.9         |
+|    n_updates            | 1680        |
+|    policy_gradient_loss | 0.000371    |
+|    value_loss           | 17.3        |
+-----------------------------------------
