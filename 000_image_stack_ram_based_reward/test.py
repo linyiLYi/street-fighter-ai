@@ -19,7 +19,7 @@ def make_env(game, state):
 
 game = "StreetFighterIISpecialChampionEdition-Genesis"
 state_stages = [
-    "Champion.Level1.ChunLiVsGuile", # Average reward for random strategy: -102.3
+    "Champion.Level1.ChunLiVsGuile", # Average reward for random strategy: -102.3 | -20.4
     "ChampionX.Level1.ChunLiVsKen", # Average reward for random strategy: -247.6
     "Champion.Level2.ChunLiVsKen",
     "Champion.Level3.ChunLiVsChunLi",
@@ -42,8 +42,12 @@ model = PPO(
     env,
     verbose=1
 )
-model_path = r"optuna/trial_1_best_model" # Average reward for optuna/trial_1_best_model: -82.3
+model_path = r"trained_models_level_1/ppo_chunli_1075200_steps"
 model.load(model_path)
+# Average reward for optuna/trial_1_best_model: -82.3
+# Average reward for optuna/trial_9_best_model: 36.7 | -86.23
+# Average reward for trained_models/ppo_chunli_5376000_steps: -77.8
+
 
 obs = env.reset()
 done = False
