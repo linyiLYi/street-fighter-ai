@@ -1,3 +1,4 @@
+import os
 import time 
 
 import retro
@@ -5,6 +6,9 @@ from stable_baselines3.common.monitor import Monitor
 
 from street_fighter_custom_wrapper import StreetFighterCustomWrapper
     
+LOG_DIR = 'logs/'
+os.makedirs(LOG_DIR, exist_ok=True)
+
 def make_env(game, state):
     def _init():
         env = retro.make(

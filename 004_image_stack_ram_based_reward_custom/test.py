@@ -20,30 +20,44 @@ def make_env(game, state):
 game = "StreetFighterIISpecialChampionEdition-Genesis"
 state_stages = [
     "Champion.Level1.RyuVsGuile",
-    "Champion.Level1.ChunLiVsGuile", # Average reward for random strategy: -102.3 | -20.4
-    "ChampionX.Level1.ChunLiVsKen", # Average reward for random strategy: -247.6
-    "Champion.Level2.ChunLiVsKen",
-    "Champion.Level3.ChunLiVsChunLi",
-    "Champion.Level4.ChunLiVsZangief",
-    "Champion.Level5.ChunLiVsDhalsim",
-    "Champion.Level6.ChunLiVsRyu",
-    "Champion.Level7.ChunLiVsEHonda",
-    "Champion.Level8.ChunLiVsBlanka",
-    "Champion.Level9.ChunLiVsBalrog",
-    "Champion.Level10.ChunLiVsVega",
-    "Champion.Level11.ChunLiVsSagat",
-    "Champion.Level12.ChunLiVsBison"
-    # Add other stages as necessary
+    "Champion.Level2.RyuVsKen",
+    "Champion.Level3.RyuVsChunLi",
+    "Champion.Level4.RyuVsZangief",
+    "Champion.Level5.RyuVsDhalsim",
+    "Champion.Level6.RyuVsRyu",
+    "Champion.Level7.RyuVsEHonda",
+    "Champion.Level8.RyuVsBlanka",
+    "Champion.Level9.RyuVsBalrog",
+    "Champion.Level10.RyuVsVega",
+    "Champion.Level11.RyuVsSagat",
+    "Champion.Level12.RyuVsBison"
 ]
+# state_stages = [
+#     "Champion.Level1.RyuVsGuile",
+#     "Champion.Level1.ChunLiVsGuile", # Average reward for random strategy: -102.3 | -20.4
+#     "ChampionX.Level1.ChunLiVsKen", # Average reward for random strategy: -247.6
+#     "Champion.Level2.ChunLiVsKen",
+#     "Champion.Level3.ChunLiVsChunLi",
+#     "Champion.Level4.ChunLiVsZangief",
+#     "Champion.Level5.ChunLiVsDhalsim",
+#     "Champion.Level6.ChunLiVsRyu",
+#     "Champion.Level7.ChunLiVsEHonda",
+#     "Champion.Level8.ChunLiVsBlanka",
+#     "Champion.Level9.ChunLiVsBalrog",
+#     "Champion.Level10.ChunLiVsVega",
+#     "Champion.Level11.ChunLiVsSagat",
+#     "Champion.Level12.ChunLiVsBison"
+#     # Add other stages as necessary
+# ]
 
-env = make_env(game, state_stages[0])()
+env = make_env(game, state_stages[11])()
 
 model = PPO(
     "CnnPolicy", 
     env,
     verbose=1
 )
-model_path = r"trained_models_level_1/ppo_ryu_000000_steps"
+model_path = r"trained_models_ryu_level_1_time_reward_small_random/ppo_ryu_2600000_steps"
 model.load(model_path)
 # Average reward for optuna/trial_1_best_model: -82.3
 # Average reward for optuna/trial_9_best_model: 36.7 | -86.23
@@ -60,6 +74,7 @@ for _ in range(num_episodes):
     obs = env.reset()
     total_reward = 0
     while not done:
+    # while True:
         timestamp = time.time()
         action, _states = model.predict(obs)
         obs, reward, done, info = env.step(action)
@@ -68,9 +83,9 @@ for _ in range(num_episodes):
             total_reward += reward
             print("Reward: {}, playerHP: {}, enemyHP:{}".format(reward, info['health'], info['enemy_health']))
         env.render()
-        time.sleep(0.01)
+        # time.sleep(0.005)
     print("Total reward: {}".format(total_reward))
     episode_reward_sum += total_reward
 
-env.close()
-print("Average reward for {}: {}".format(model_path, episode_reward_sum/num_episodes))
+# env.close()
+# print("Average reward for {}: {}".format(model_path, episode_reward_sum/num_episodes))

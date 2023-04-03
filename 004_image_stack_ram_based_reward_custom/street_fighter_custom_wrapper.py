@@ -1,3 +1,4 @@
+import math
 import collections
 
 import gym
@@ -13,7 +14,9 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         self.num_frames = 3
         self.frame_stack = collections.deque(maxlen=self.num_frames)
 
-        self.reward_coeff = 3
+        self.reward_coeff = 3.0
+
+        self.total_timesteps = 0
 
         self.full_hp = 176
         self.prev_player_health = self.full_hp
@@ -37,6 +40,8 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         observation = self.env.reset()
         self.prev_player_health = self.full_hp
         self.prev_oppont_health = self.full_hp
+
+        self.total_timesteps = 0
         
         # Clear the frame stack and add the first observation [num_frames] times
         self.frame_stack.clear()
@@ -50,20 +55,24 @@ class StreetFighterCustomWrapper(gym.Wrapper):
         obs, _reward, _done, info = self.env.step(action)
         curr_player_health = info['health']
         curr_oppont_health = info['enemy_health']
+        
+        self.total_timesteps += 1
 
         # Game is over and player loses.
         if curr_player_health < 0:
-            custom_reward = -curr_oppont_health    # Use the remaining health points of opponent as penalty. 
+            custom_reward = -math.pow(self.full_hp, (curr_oppont_health + 1) / (self.full_hp + 1))    # Use the remaining health points of opponent as penalty. 
                                                    # If the opponent also has negative health points, it's a even game and the reward is +1.
             custom_done = True
 
         # Game is over and player wins.
         elif curr_oppont_health < 0:
-            custom_reward = curr_player_health * self.reward_coeff # Use the remaining health points of player as reward.
+            # custom_reward = curr_player_health * self.reward_coeff # Use the remaining health points of player as reward.
                                                                    # Multiply by reward_coeff to make the reward larger than the penalty to avoid cowardice of agent.
+
+            custom_reward = math.pow(self.full_hp, (5940 - self.total_timesteps) / 5940) * self.reward_coeff # Use the remaining time steps as reward.
             custom_done = True
 
-        # While the fighting is still going on.
+        # While the fighting is still going on
         else:
             custom_reward = self.reward_coeff * (self.prev_oppont_health - curr_oppont_health) - (self.prev_player_health - curr_player_health)
             self.prev_player_health = curr_player_health
@@ -75,5 +84,5 @@ class StreetFighterCustomWrapper(gym.Wrapper):
             custom_done = False
              
         # Max reward is 6 * full_hp = 1054 (damage * 3 + winning_reward * 3) 
-        return self._preprocess_observation(obs), custom_reward, custom_done, info
+        return self._preprocess_observation(obs), 0.001 * custom_reward, custom_done, info # reward normalization
     
