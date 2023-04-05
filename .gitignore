@@ -1,1 +1,6 @@
 *.zip
+__pycache__
+archives/
+images/
+data/
+main/logs/monitoring/
