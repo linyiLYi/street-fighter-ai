@@ -11,3 +11,14 @@ recordings/
 007*
 *.DS_Store
 .DS_Store
+
+main/recordings/
+main/record.py
+main/update_model.py
+
+# Model Files
+/main/trained_models/*
+!/main/trained_models/ppo_ryu_2000000_steps_updated.*
+!/main/trained_models/ppo_ryu_2500000_steps_updated.*
+!/main/trained_models/ppo_ryu_3000000_steps_updated.*
+!/main/trained_models/ppo_ryu_7000000_steps_updated.*
