@@ -18,3 +18,16 @@
 ## 运行指南
 
 本项目基于 Python 编程语言，主要使用了 [OpenAI Gym Retro](https://retro.readthedocs.io/en/latest/getting_started.html)、[Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/) 等标准代码库。程序运行使用的 Python 版本为 3.8.10，建议使用 [Anaconda](https://www.anaconda.com) 配置 Python 环境。
+
+```bash
+# 创建 conda 环境，将其命名为 StreetFighterAI，Python 版本 3.8.10
+conda create -n StreetFighterAI python=3.8.10
+conda activate StreetFighterAI
+
+# 注：conda 在苹果 M1 芯片（Apple Silicon）上对 python 向下支持到 3.8.11，使用以下指令创建环境：
+# conda create -n StreetFighterAI python=3.8.11
+
+# 安装 Python 代码库
+cd [project_dir]/street-fighter-ai/main
+pip install -r requirements.txt
+```
