@@ -4,7 +4,6 @@
 
 archives/
 images/
-data/
 main/logs/monitoring/
 recordings/
 
@@ -15,6 +14,14 @@ recordings/
 main/recordings/
 main/record.py
 main/update_model.py
+
+# Game Data
+/data/
+!/data/Champion.Level12.RyuVsBison.state
+!/data/data.json
+!/data/metadata.json
+!/data/scenario.json
+
 
 # Model Files
 /main/trained_models/*

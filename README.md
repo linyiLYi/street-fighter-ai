@@ -1,6 +1,6 @@
 # SFighterAI 街头霸王游戏智能代理
 
-本项目基于深度强化学习训练了一个用于通关《街头霸王·二：冠军特别版》（Street Fighter II Special Champion Edition）关底 BOSS 的智能 AI 代理。该智能代理完全基于游戏画面（RGB 像素值）进行决策，在该项目给定存档中最后一关的第一轮对局可以取得 100% 胜率（实际上出现了“过拟合”现象，详见[结果]部分的讨论）。
+本项目基于深度强化学习训练了一个用于通关《街头霸王·二：冠军特别版》（Street Fighter II Special Champion Edition）关底 BOSS 的智能 AI 代理。该智能代理完全基于游戏画面（RGB 像素值）进行决策，在该项目给定存档中最后一关的第一轮对局可以取得 100% 胜率（实际上出现了“过拟合”现象，详见[运行测试]部分的讨论）。
 
 ### 文件结构
 
@@ -56,4 +56,18 @@ cd [项目上级文件夹]/street-fighter-ai/main
 python test.py
 ```
 
-模型权重文件存储在 `main/trained_models/` 文件夹下。
+模型权重文件存储在 `main/trained_models/` 文件夹下。其中 `ppo_ryu_2500000_steps_updated.zip` 是 `test.py` 默认使用的模型文件，该模型泛化性较好，有能力打通《街头霸王·二：冠军特别版》的最后一关。如果想要观看其他模型的表现，可以将 `test.py` 中的 `model_path` 变量修改为其他模型文件的路径。关于各训练阶段模型实际表现的观察描述如下：
+
+* ppo_ryu_2000000_steps_updated: 刚开始出现过拟合现象，具有泛化能力但实力不太强。
+* ppo_ryu_2500000_steps_updated: 接近最终过拟合状态，无法在最后一关第一轮中完全占据主导地位，但具有一定泛化能力。在最后一关三轮中有较高的获胜机会。
+* ppo_ryu_3000000_steps_updated: 接近最终过拟合状态，几乎可以在最后一关第一轮中占据主导地位，胜率接近 100%，但泛化能力较弱。
+* ppo_ryu_7000000_steps_updated: 过拟合，在最后一关第一轮中完全占据主导地位，胜率 100%，但泛化能力差。
+
+### 训练模型
+
+如果想要训练自己的模型，可以在 `main/` 文件夹下运行 `train.py`。
+
+```bash
+cd [项目上级文件夹]/street-fighter-ai/main
+python train.py
+```

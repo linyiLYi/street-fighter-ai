@@ -36,9 +36,10 @@ def make_env(game, state, seed=0):
         )
         env = StreetFighterCustomWrapper(env)
         # Create log directory
-        env_log_dir = os.path.join(LOG_DIR, str(seed+200)) # +100 to avoid conflict with other log dirs when fine-tuning
-        os.makedirs(env_log_dir, exist_ok=True)
-        env = Monitor(env, env_log_dir)
+        # env_log_dir = os.path.join(LOG_DIR, str(seed+200)) # +100 to avoid conflict with other log dirs when fine-tuning
+        # os.makedirs(env_log_dir, exist_ok=True)
+        # env = Monitor(env, env_log_dir)
+        env = Monitor(env)
         env.seed(seed)
         return env
     return _init
@@ -77,11 +78,11 @@ def main():
     )
 
     # Set the save directory
-    save_dir = "trained_models_remove_time_reward"
+    save_dir = "trained_models_test"
     os.makedirs(save_dir, exist_ok=True)
 
     # Load the model from file
-    # model_path = "trained_models_ryu_vs_bison_finetune_9_frame_step512/ppo_ryu_7000000_steps.zip"
+    # model_path = "trained_models/ppo_ryu_7000000_steps.zip"
     
     # Load model and modify the learning rate and entropy coefficient
     # custom_objects = {
