@@ -1,0 +1,5 @@
+gym==0.18.3
+gym-retro==0.8.0
+opencv-python==4.7.0.72
+stable-baselines3==1.1.0
+tensorboard==2.12.1
