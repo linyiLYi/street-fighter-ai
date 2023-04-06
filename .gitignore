@@ -9,3 +9,4 @@ main/logs/monitoring/
 recordings/
 
 007*
+*.DS_Store
