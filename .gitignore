@@ -4,16 +4,21 @@
 
 archives/
 images/
-main/logs/monitoring/
-recordings/
+/main/logs/monitoring/
 
-007*
+# Mac system files
+/007*
 *.DS_Store
 .DS_Store
 
-main/recordings/
-main/record.py
-main/update_model.py
+# Recorded videos
+/main/recordings/
+
+# Main scripts
+/main/*.py
+!/main/test.py
+!/main/train.py
+!/main/street_fighter_custom_wrapper.py
 
 # Game Data
 /data/

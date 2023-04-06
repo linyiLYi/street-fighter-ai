@@ -35,10 +35,6 @@ def make_env(game, state, seed=0):
             obs_type=retro.Observations.IMAGE    
         )
         env = StreetFighterCustomWrapper(env)
-        # Create log directory
-        # env_log_dir = os.path.join(LOG_DIR, str(seed+200)) # +100 to avoid conflict with other log dirs when fine-tuning
-        # os.makedirs(env_log_dir, exist_ok=True)
-        # env = Monitor(env, env_log_dir)
         env = Monitor(env)
         env.seed(seed)
         return env
