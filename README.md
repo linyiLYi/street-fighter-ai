@@ -2,7 +2,7 @@
 
 [简体中文](README_CN.md) | English
 
-This project is an AI agent trained using deep reinforcement learning to beat the final boss in the game "Street Fighter II: Special Champion Edition". The AI agent makes decisions based solely on the game screen's RGB pixel values. In the provided save state, the agent achieves a 100% win rate in the first round of the final level (overfitting occurs, see the [Running Tests] section for discussion).
+This project is an AI agent trained using deep reinforcement learning to beat the final boss in the game "Street Fighter II: Special Champion Edition". The AI agent makes decisions based solely on the game screen's RGB pixel values. In the provided save state, the agent achieves a 100% win rate in the first round of the final level (overfitting occurs, see the [Running Tests](#running-tests) section for discussion).
 
 ### File Structure
 
@@ -16,7 +16,7 @@ This project is an AI agent trained using deep reinforcement learning to beat th
 │   └───scripts
 ```
 
-The game configuration files are stored in the data/ folder, and the main project code is in the main/ folder. Within main/, the logs/ folder contains terminal texts and data curves recording the training process (viewable with Tensorboard), while the trained_models/ folder contains model weights from different stages. These weights can be used for running tests in test.py to observe the performance of the AI agent's learned strategies at different training stages.
+The game configuration files are stored in the `data/` folder, and the main project code is in the `main/` folder. Within `main/`, the `logs/` folder contains terminal/console outputs and data curves recording the training process (viewable with Tensorboard), while the `trained_models/` folder contains model weights from different stages. These weights can be used for running tests in `test.py` to observe the performance of the AI agent's learned strategies at different training stages.
 
 ## Running Guide
 
@@ -50,7 +50,7 @@ Note: If you want to record videos of the AI agent's gameplay, you will need to 
 conda install ffmpeg
 ```
 
-### Running Tests
+### <a name="running-tests"></a>Running Tests
 
 Once the environment is set up, you can run `test.py` in the `main/` folder to test and experience the AI agent's performance at different stages of training.
 

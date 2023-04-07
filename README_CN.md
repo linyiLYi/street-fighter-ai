@@ -2,7 +2,7 @@
 
 简体中文 | [English](README.md)
 
-本项目基于深度强化学习训练了一个用于通关《街头霸王·二：冠军特别版》（Street Fighter II Special Champion Edition）关底 BOSS 的智能 AI 代理。该智能代理完全基于游戏画面（RGB 像素值）进行决策，在该项目给定存档中最后一关的第一轮对局可以取得 100% 胜率（实际上出现了“过拟合”现象，详见[运行测试]部分的讨论）。
+本项目基于深度强化学习训练了一个用于通关《街头霸王·二：冠军特别版》（Street Fighter II Special Champion Edition）关底 BOSS 的智能 AI 代理。该智能代理完全基于游戏画面（RGB 像素值）进行决策，在该项目给定存档中最后一关的第一轮对局可以取得 100% 胜率（实际上出现了“过拟合”现象，详见[运行测试](#running-tests)部分的讨论）。
 
 ### 文件结构
 
@@ -49,7 +49,7 @@ python .\utils\print_game_lib_folder.py
 conda install ffmpeg
 ```
 
-### 运行测试
+### <a name="running-tests"></a>运行测试
 
 环境配置完成后，可以在 `main/` 文件夹下运行 `test.py` 进行测试，实际体验智能代理在不同训练阶段的表现。
 
