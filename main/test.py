@@ -18,7 +18,7 @@ from stable_baselines3 import PPO
 
 from street_fighter_custom_wrapper import StreetFighterCustomWrapper
 
-RESET_ROUND = True # Whether to reset the round when fight is over. 
+RESET_ROUND = True  # Whether to reset the round when fight is over. 
 RENDERING = True    # Whether to render the game screen.
 
 MODEL_NAME = r"ppo_ryu_2500000_steps_updated" # Speicify the model file to load. Model "ppo_ryu_2500000_steps_updated" is capable of beating the final stage (Bison) of the game.
