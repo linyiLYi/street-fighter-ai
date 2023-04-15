@@ -1,0 +1,18 @@
+{
+  "done": {
+    "variables": {
+      "reset_countdown": {
+        "op": "equal",
+        "reference": 10
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "score": {
+        "reward": 1.0
+      }
+    }
+  },
+  "crop": [0, 16, 256, 200]
+}

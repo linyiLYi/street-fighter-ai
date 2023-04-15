@@ -1,0 +1,60 @@
+{
+    "info": {
+        "enemy_character": {
+            "address": 16745563,
+            "type": "|u1"
+        },
+        "agent_hp": {
+            "address": 16744514,
+            "type": ">i2"
+        },
+        "agent_x": {
+            "address": 16744454,
+            "type": ">u2"
+        },
+        "agent_y": {
+            "address": 16744458,
+            "type": ">u2"
+        },
+        "enemy_hp": {
+            "address": 16745154,
+            "type": ">i2"
+        },
+        "enemy_x": {
+            "address": 16745094,
+            "type": ">u2"
+        },
+        "enemy_y": {
+            "address": 16745098,
+            "type": ">u2"
+        },
+        "score": {
+            "address": 16744936,
+            "type": ">d4"
+        },
+        "agent_victories": {
+            "address": 16744922,
+            "type": "|u1"
+        },
+        "enemy_victories": {
+            "address": 16745559,
+            "type": ">u4"
+        },
+        "round_countdown": {
+            "address": 16750378,
+            "type": ">u2"
+        },
+        "reset_countdown": {
+            "address": 16744917,
+            "type": "|u1"
+        },
+        "agent_status": {
+            "address": 16744450,
+            "type": ">u2"
+        },
+        "enemy_status": {
+            "address": 16745090,
+            "type": ">u2"
+        }
+    }
+}
