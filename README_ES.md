@@ -44,7 +44,9 @@ Para ejecutar el programa, también necesitará el archivo de ROM del juego "Str
 
 Una vez que haya obtenido legalmente el archivo de ROM del juego, cópielo a la carpeta de datos del juego de gym-retro mencionada anteriormente y cámbiele el nombre a `rom.md`. En este punto, la configuración del entorno está completa.
 
-Nota: Si desea grabar videos del juego del agente de IA, deberá instalar [ffmpeg](https://ffmpeg.org/).
+Nota 1: Si desea ver la interfaz de usuario de integración gym-retro en el juego para capturar manualmente el estado guardado y buscar variables de memoria, puede usar la interfaz de integración gym-retro ui, copie `data/Gym Retro Integration.exe` a la carpeta de datos del juego de gym-retro mencionada anteriormente (dos niveles superiores, la carpeta `retro/`).
+
+Nota 2: Si desea grabar videos del juego del agente de IA, deberá instalar [ffmpeg](https://ffmpeg.org/).
 
 ```bash
 conda install ffmpeg

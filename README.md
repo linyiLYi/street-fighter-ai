@@ -44,7 +44,9 @@ To run the program, you will also need the game ROM file for "Street Fighter II:
 
 Once you have legally obtained the game ROM file, copy it to the aforementioned gym-retro game data folder and rename it to `rom.md`. At this point, the environment setup is complete.
 
-Note: If you want to record videos of the AI agent's gameplay, you will need to install [ffmpeg](https://ffmpeg.org/).
+Note 1: If you want to manually capture save states and find memory variables in the game, you can use the gym-retro integration ui. Copy `data/Gym Retro Integration.exe` to the parent menu (two levels up, `retro/` folder) of the aforementioned gym-retro game data folder.
+
+Note 2: If you want to record videos of the AI agent's gameplay, you will need to install [ffmpeg](https://ffmpeg.org/).
 
 ```bash
 conda install ffmpeg

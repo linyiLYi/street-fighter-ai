@@ -44,7 +44,9 @@ python .\utils\print_game_lib_folder.py
 
 通过合法途径自行获得游戏 ROM 文件后，将其复制到前述 gym-retro 的游戏数据文件夹下，并重命名为`rom.md`。至此，环境配置准备工作完成。
 
-注：如果想要录制智能代理的对战视频，还需要安装 [ffmpeg](https://ffmpeg.org/)。
+注 1：如果想在游戏中手动抓取存档、寻找内存变量，可以使用 gym-retro integration ui，将`data/Gym Retro Integration.exe` 复制到前述 gym-retro 游戏数据文件夹下的上级菜单（上两级，`retro/` 文件夹下）即可。
+
+注 2：如果想要录制智能代理的对战视频，还需要安装 [ffmpeg](https://ffmpeg.org/)。
 ```bash
 conda install ffmpeg
 ```
