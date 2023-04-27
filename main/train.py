@@ -86,7 +86,7 @@ def main():
     )
 
     # Set the save directory
-    save_dir = "trained_models_test"
+    save_dir = "trained_models"
     os.makedirs(save_dir, exist_ok=True)
 
     # Load the model from file
