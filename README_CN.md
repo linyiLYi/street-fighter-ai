@@ -29,6 +29,10 @@
 conda create -n StreetFighterAI python=3.8.10
 conda activate StreetFighterAI
 
+# 设置可用的wheel和setuptools以避免gym安装问题
+pip install wheel==0.38.4
+pip install setuptools==65.0.0
+
 # 安装 Python 代码库
 cd [项目上级文件夹]/street-fighter-ai/main
 pip install -r requirements.txt
