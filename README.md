@@ -1,6 +1,5 @@
 # SFighterAI
 
-[简体中文](README_CN.md) | English | [Español](README_ES.md)
 
 This project is an AI agent trained using deep reinforcement learning to beat the final boss in the game "Street Fighter II: Special Champion Edition". The AI agent makes decisions based solely on the game screen's RGB pixel values. In the provided save state, the agent achieves a 100% win rate in the first round of the final level (overfitting occurs, see the [Running Tests](#running-tests) section for discussion).
 
